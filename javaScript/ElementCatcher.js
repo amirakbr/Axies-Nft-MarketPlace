@@ -1,0 +1,11 @@
+const lighttheme = document.querySelector('.header__lightTheme') ; 
+const header = document.querySelector('.header') ; 
+const hero = document.querySelector('.hero') ; 
+const swipper = document.querySelector('.swiper') ; 
+const main = document.querySelector('.main') ; 
+const swiperheader = document.querySelector('.swiper__header') ;  
+const feature = document.querySelector('.feature__card--container') ; 
+const popular = document.querySelector('.popular') ; 
+const topseller = document.querySelector('.top__seller') ;  
+const todapick = document.querySelector('.todayPicksZ') ; 
+const footer = document.querySelector('.footer') ; 
