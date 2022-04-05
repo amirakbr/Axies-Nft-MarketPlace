@@ -1,0 +1,209 @@
+@import '../Ultility/Variable' ; 
+
+.footer--dark {
+    color: $light--clr;
+    background-color: $dark--clr ;
+    li {
+        font-size: $font-size-small;
+        margin: .8em 0;
+        width: max-content;
+        @include dsply-column-cntr-cntr ; 
+        transform-origin: left;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            border-bottom: solid .2em $light--clr;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+            top: -.3em;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            border-top: solid .2em $light--clr;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease-in-out;
+            bottom:-.3em;
+          }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        &:hover:before {
+            transform: scaleX(1);
+            transform-origin: right;
+        }
+    }
+    .footer__subscription--icon {
+        padding: .5em;
+        width: 100%;
+        background-color: royalblue;
+        @include dsply-column-cntr-cntr ; 
+        border-radius: 50%;
+        font-size: $font-size-sub-normal;
+        transition: all .3s ease-in-out;
+        transform: translateY(0);
+        &:hover {
+            transform: translateY(-.5em);
+        }
+    }
+}
+.footer--light {
+    color: $dark--clr; 
+    background-color: white;
+    @include placehol(black) ; 
+    li {
+        font-size: $font-size-small;
+        margin: .8em 0;
+        width: max-content;
+        @include dsply-column-cntr-cntr ; 
+        transform-origin: left;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            border-bottom: solid .2em $blue--violet--clr ; 
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+            top: -.3em;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            border-top: solid .2em $blue--violet--clr;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease-in-out;
+            bottom:-.3em;
+          }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        &:hover:before {
+            transform: scaleX(1);
+            transform-origin: right;
+        }
+    }
+    .footer__subscription--icon {
+        padding: .5em;
+        width: 100%;
+        background-color: royalblue;
+        @include dsply-column-cntr-cntr ; 
+        border-radius: 50%;
+        font-size: $font-size-sub-normal;
+        transition: all .3s ease-in-out;
+        transform: translateY(0);
+        color: $light--clr;
+        &:hover {
+            transform: translateY(-.5em);
+        }
+    }
+}
+.footer {
+    z-index: 5;
+    padding-top: 3em;
+    overflow: hidden;
+    .footer__container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        margin: 0 4rem;
+        align-items: flex-start;
+        gap: 2rem 4rem;
+        justify-items: center;
+        .footer__company--detail {
+            @include dsply-column(flex-start , flex-start) ; 
+            .footer__company__logo {
+                height: 5rem;
+                margin-bottom: 1em;
+            }
+            .footer__company__deccription {
+                font-size: $font-size-sub-normal;
+                margin-top: 1em;
+            }
+        }
+            .footer__links--account , .footer__links--resource ,
+            .footer__links--company  {
+                p{
+                    font-size: $font-size-sub-normal;
+                }
+                ul {
+                    margin-top: .5em;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
+        .footer__subscription__container {
+            @include dsply-column(flex-start , center) ; 
+            width: 30rem;
+            .footer__subscription__container--title {
+                font-size: $font-size-sub-large;
+            }
+            .footer__subscription--entry {
+                width: 100%;
+                margin-top: 1.5em;
+                .footer__subscription--form {
+                    display: flex;
+                    width: 37rem;
+                    .footer__subscription--input {
+                        padding: 1.5rem 0 1.5rem .5em;
+                        font-size: $font-size-sub-normal;
+                        width: 100%;
+                        color: white;
+                        transition: all .5s ease-in-out;
+                        border-radius: 2em;
+                        border: .2em solid $purple--clr;
+                        &:focus {
+                            padding-left: 2rem;
+                            border: .2em solid $blue--violet--clr;
+                            border-right: none;
+                            font-size: $font-size-normal;
+                        }
+                    }
+                    .footer__subscription--submit {
+                        color: black;
+                        padding: 1.4em;
+                        background-color: blueviolet;
+                        border-radius: 0 2em 2em 0 ;
+                        left: -5rem;
+                        i {
+                            font-size: $font-size-sub-large ; 
+                            color: $light--clr ; 
+                        }
+                    }
+                }
+            }
+            .footer__subscription--icon__container {
+                display: grid;
+                grid-template-columns: repeat(6 , 4rem);
+                margin-top: 2em;
+                gap: 1rem .5em;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+}
+@include placehol(white) ; 
+.footer__shape {
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+    width : 35rem ;
+    height : 30rem ; 
+    border-radius: 7rem;
+    background-color : $gradiant-finish-purple; 
+    z-index: +3;
+    transform: rotateZ(37deg);
+}

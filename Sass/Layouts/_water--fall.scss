@@ -1,0 +1,201 @@
+@import '../Ultility/Variable' ; 
+
+
+.water--fall__menu1 {
+    position: absolute;
+    top: 5vh;
+    left: .5em ;
+    z-index: +1000;
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all .5s ease-in-out;
+    width: 20rem;
+    .water--fall__menu--container {
+        background-color: white;
+        color: black;
+        width: 100%;
+        .water--fall__menu--item {
+            padding: .8em;
+            font-size: $font-size-normal;
+            @include dsply-flex(center , flex-start) ; 
+            width: 100%;
+            &::before{
+                width: 0em;
+                height: 0em;
+                transition: all .3s ease-in-out;
+                background-color: rebeccapurple;
+                display: block;
+                content: "";
+            }
+            &:hover::before {
+                width: 1em;
+                height: .1em;
+            }
+        }
+    }
+}
+.water--fall__menu2 {
+    position: absolute;
+    top: 7vh;
+    left: .5em ;
+    z-index: +1000;
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all .5s ease-in-out;
+    width: 20rem;
+    .water--fall__menu--container {
+        background-color: white;
+        color: black;
+        width: 100%;
+        .water--fall__menu--item {
+            padding: .8em;
+            font-size: $font-size-normal;
+            @include dsply-flex(center , flex-start) ; 
+            width: 100%;
+            &::before{
+                width: 0em;
+                height: 0em;
+                transition: all .3s ease-in-out;
+                background-color: rebeccapurple;
+                display: block;
+                content: "";
+            }
+            &:hover::before {
+                width: 1em;
+                height: .1em;
+            }
+        }
+    }
+}
+.water--fall__menu3 {
+    position: absolute;
+    top: 7vh;
+    left: .5em ;
+    z-index: +1000;
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all .5s ease-in-out;
+    width: 20rem;
+    .water--fall__menu--container {
+        background-color: white;
+        color: black;
+        width: 100%;
+        .water--fall__menu--item {
+            padding: .8em;
+            font-size: $font-size-normal;
+            @include dsply-flex(center , flex-start) ; 
+            width: 100%;
+            &::before{
+                width: 0em;
+                height: 0em;
+                transition: all .3s ease-in-out;
+                background-color: rebeccapurple;
+                display: block;
+                content: "";
+            }
+            &:hover::before {
+                width: 1em;
+                height: .1em;
+            }
+        }
+    }
+}
+.water--fall__menu4 {
+    position: absolute;
+    top: 7vh;
+    left: .5em ;
+    z-index: +1000;
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all .5s ease-in-out;
+    width: 20rem;
+    .water--fall__menu--container {
+        background-color: white;
+        color: black;
+        width: 100%;
+        .water--fall__menu--item {
+            padding: .8em;
+            font-size: $font-size-normal;
+            @include dsply-flex(center , flex-start) ; 
+            width: 100%;
+            &::before{
+                width: 0em;
+                height: 0em;
+                transition: all .3s ease-in-out;
+                background-color: rebeccapurple;
+                display: block;
+                content: "";
+            }
+            &:hover::before {
+                width: 1em;
+                height: .1em;
+            }
+        }
+    }
+}
+.water--fall__menu5 {
+    position: absolute;
+    top: 7vh;
+    left: .5em ;
+    z-index: +1000;
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all .5s ease-in-out;
+    width: 20rem;
+    .water--fall__menu--container {
+        background-color: white;
+        color: black;
+        width: 100%;
+        .water--fall__menu--item {
+            padding: .8em;
+            font-size: $font-size-normal;
+            @include dsply-flex(center , flex-start) ; 
+            width: 100%;
+            &::before{
+                width: 0em;
+                height: 0em;
+                transition: all .3s ease-in-out;
+                background-color: rebeccapurple;
+                display: block;
+                content: "";
+            }
+            &:hover::before {
+                width: 1em;
+                height: .1em;
+            }
+        }
+    }
+}
+.water--fall__menu6 {
+    position: absolute;
+    top: 7vh;
+    left: .5em ;
+    z-index: +1000;
+    opacity: 0;
+    transform: translateX(5rem);
+    transition: all .5s ease-in-out;
+    width: 20rem;
+    .water--fall__menu--container {
+        background-color: white;
+        color: black;
+        width: 100%;
+        .water--fall__menu--item {
+            padding: .8em;
+            font-size: $font-size-normal;
+            @include dsply-flex(center , flex-start) ; 
+            width: 100%;
+            &::before{
+                width: 0em;
+                height: 0em;
+                transition: all .3s ease-in-out;
+                background-color: rebeccapurple;
+                display: block;
+                content: "";
+            }
+            &:hover::before {
+                width: 1em;
+                height: .1em;
+            }
+        }
+    }
+}

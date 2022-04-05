@@ -1,0 +1,298 @@
+@import '../Ultility/Variable' ; 
+.today__picks--dark {
+    color: $light--clr;
+    .todayPicks__category--card , .todayPicks__category--sort{
+        transition: all .3s ease-in-out;
+        border: .2em solid $gray-scale;
+        overflow: hidden;
+        &::before {
+            width: 100%;
+            height: 100%;
+            padding: .5em 1em;
+            background-color: $gradiant-finish-purple;
+            content: "";
+            clear: both;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin:right center;
+            right: 0;
+            transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
+            border-radius: .5em;
+            
+        }
+        &:hover:before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+        &:hover {
+            border: .2em solid $blue--violet--clr;
+            box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+            transform: translateY(-.5em);
+        }
+    }
+    .todaypicks__card {
+        background-color: $gray-scale;}
+        .todaypicks__card--creator__type {
+            background-color: $blue--violet--clr;
+
+        }
+
+        .todayPicks__load--more{
+            p{
+                border: .2em solid $gray-scale;
+                overflow: hidden;
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                    padding: .5em 1em;
+                    background-color: $gradiant-finish-purple;
+                    content: "";
+                    clear: both;
+                    position: absolute;
+                    transform: scaleX(0);
+                    transform-origin:right center;
+                    right: 0;
+                    transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
+                    border-radius: .5em;
+                    margin-top: -1.3rem;
+                    
+                }
+                &:hover:before{
+                    transform-origin: left;
+                    transform: scaleX(1);
+                }                    
+            &:hover {
+                border: .2em solid $blue--violet--clr;
+                box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+                transform: translateY(.5em);
+                }
+            }
+        }   
+}
+.today__picks--light {
+    color: $dark--clr;
+    .todayPicks__category--card , .todayPicks__category--sort{
+        border: .2em solid $purple--clr;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        &::before {
+            width: 100%;
+            height: 100%;
+            background-color: $blue--violet--clr;
+            content: "";
+            clear: both;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin:right center;
+            right: 0;
+            transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
+            border-radius: .5em;
+        }
+        &:hover:before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+        &:hover {
+            border: .2em solid $blue--violet--clr;
+            box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+            transform: translateY(-.5em);
+            color: $light--clr !important;
+        }
+    }
+    .todaypicks__card {
+        background-color: white;
+        box-shadow: 0em 0em 2em 0em #b9b9b9;
+        transition: all .3s ease-in-out;
+        &:hover {
+            box-shadow: 0em 2em 3em 0em #828282;
+        }
+    }
+    .todaypicks__card--creator__type {
+        color: $light--clr;   
+        background-color: $blue--violet--clr;
+    }
+    .todayPicks__load--more{
+        p{
+            border: .2em solid $purple--clr;
+            transition: all .3s ease-in-out;
+        overflow: hidden;
+        &::before {
+            width: 100%;
+            height: 100%;
+            background-color: $blue--violet--clr;
+            content: "";
+            clear: both;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin:right center;
+            right: 0;
+            transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
+            border-radius: .5em;
+            margin-top: -1.3rem ;
+        }
+        &:hover:before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+            &:hover {
+                border: .2em solid $blue--violet--clr;
+                box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+                transform: translateY(.8em);
+                color: $light--clr !important
+            }
+        }
+    }
+}
+.todayPicksZ {
+    .todayPicks__container {
+        margin: 10rem 2.5rem 2.5rem;
+        padding-bottom: 3rem;
+        .todayPicks__category--container {
+            @include dsply-flex(center , space-between) ; 
+            .todayPicks__category--type {
+                @include dsply-flex-cntr-cntr ; 
+                width: max-content;
+                .todayPicks__category--card {
+                    font-size: $font-size-sub-normal;
+                    margin-right: 1em;
+                    padding: .3em 1em;
+                    border-radius: 2em;
+                    @include dsply-flex-cntr-cntr ; 
+                    svg {
+                        height: 4rem;
+                        margin-right: .8em;
+                    }
+                }
+            }
+            .todayPicks__category--sort {
+                font-size: $font-size-sub-normal;
+                padding: .3em 1em;
+                border-radius: 2em;
+                @include dsply-flex-cntr-cntr ; 
+                svg {
+                    height: 4rem;
+                    margin-right: .8em;
+                }
+            }
+        } 
+        .todaypicks__card--container {
+            @include grid-repeat(4,1fr) ; 
+            grid-gap: 2em 1.5em;
+            margin-top: 4em;
+            .todaypicks__card {
+                @include dsply-column-cntr-cntr ; 
+                padding: 1em;
+                border-radius: 2em;
+                .todaypicks__card--img {
+                    width: 100%;
+                    height: 22rem;
+                    border-radius: 2em;
+                    overflow: hidden;
+                    img {
+                        border-radius: 2em;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            scale: 1.2;
+                        }
+                    }
+                }
+                .todaypicks__card--title {
+                    font-size: $font-size-sub-normal;
+                    width: 100%;
+                    margin: 1em 0 ; 
+                    text-align: center ; 
+                }
+                .todaypicks__card--creator__info--container {
+                    @include dsply-flex(center , space-between) ; 
+                    width: 100%;
+                    .todaypicks__card--creator__info {
+                        @include dsply-flex(center , space-between) ; 
+                        .todaypicks__card--creator__img {
+                            height: 5rem;
+                            border-radius: 1em ; 
+                            img {
+                                border-radius: 1em ; 
+                            }
+                        }
+                        .todaypicks__card--creator__id {
+                            @include dsply-column(flex-start , space-evenly) ; 
+                            margin-left: 1em ;
+                            .todaypicks__card--creator__role {
+                                margin-bottom: .2em;
+                                font-size: $font-size-small;
+                            }
+                            .todaypicks__card--creator__idname {
+                                margin-top: .2em;
+                                font-size: $font-size-normal;
+                            }
+                        }
+                    }
+                    .todaypicks__card--creator__type {
+                        font-size: $font-size-small;
+                        padding: .5em 1em;
+                        border-radius: 2rem;
+                        font-weight: 500;
+                    }
+                }
+                .hr--today {
+                    width: 100%;
+                    margin: 1em 0;
+                    border: none;
+                    border-bottom: .15em solid $dark--clr
+                }
+                .today--pick__box--bid {
+                    @include dsply-flex(center , space-between) ;
+                    width: 100%;
+                    .today--pick--bid__price {
+                        @include dsply-column(flex-start , space-evenly) ; 
+                        .today--pick--bid__status {
+                            margin-bottom: .2em ;
+                            font-size: $font-size-small ; 
+                        }
+                        .today--pick--bid__price--system {
+                            @include dsply-flex-cntr-cntr ;
+                            margin-top: .2em;
+                            font-size: $font-size-sub-normal;
+                            span {
+                                margin-left: .5em ;
+                                font-size: $font-size-small ; 
+                            }
+                        }
+                    }
+                    .today--pick--bid__feedback {
+                        @include dsply-flex(center , space-between) ;
+                        .today--pick__icon {
+                            transition: all .3s ease-in-out;
+                            svg {
+                                height: 2.5rem;
+                            }
+                        }
+                        .today--pick__message {
+                            font-size: $font-size-small;
+                            font-weight: 700 ;
+                        }
+                        &:hover .today--pick__icon{
+                            transform: rotate(-180deg);
+                        }
+                    }
+                    
+                }
+                transition:all .3s ease-in-out;
+                transform: translateY(0em);
+                &:hover{
+                    transform: translateY(-.5em);
+                }
+            }
+        } 
+        .todayPicks__load--more {
+            @include dsply-flex-cntr-cntr ; 
+            font-size: $font-size-sub-large;
+            margin: 2em  0em;
+            p {
+                padding: .5em 2em;
+                border-radius: 2em;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import '../Ultility/Variable' ; 
+.swiper__container {
+    padding: .5em 0 !important;
+    overflow: hidden;
+    .swiper__card {
+        width: 100%;
+        background-color: $gray-scale;
+        margin: 0 1rem 0 0 !important;
+        padding: 1em;
+        @include dsply-column-cntr-cntr ;
+        border-radius: 1em;
+    }
+    .swiper__box--img {
+        height: 30rem;
+        width: 100%;
+        border-radius: 1rem;
+        img {
+            border-radius: 1rem;
+        }
+    }
+    .swiper__box--title {
+        margin-top: .8em ; 
+        font-size: $font-size-normal ; 
+        text-align: center
+    }
+    .swiper__box--creator__info {
+        @include dsply-flex(flex-start , space-between) ; 
+        width: 100%;
+        margin: 1.5em 0 ;
+        .swiper__box--creator {
+            @include dsply-flex(center , space-between) ; 
+            .swiper__box--creator__img {
+                height: 6rem;
+                border-radius: .5em ; 
+                img {
+                    border-radius: .5em ; 
+                    object-fit: fill ; 
+                }
+            }
+            .swiper__box--creator__detail {
+                @include dsply-column(space-between , center) ; 
+                margin: 0 0 0 .8em;
+                .swiper__box--creator__title {
+                    margin: .2em 0 ;
+                    font-size: $font-size-small;
+                }
+                .swiper__box--creator__username {
+                    margin: .2em 0 ;
+                    font-size: $font-size-normal;
+                }
+            }
+        }
+        .swiper__box--creator__type {
+            font-size: $font-size-small ; 
+            padding: .5em 1em; 
+            border-radius: .8em ; 
+            @include dsply-flex(flex-start , center) ; 
+        }
+    }
+    .hr--swipp {
+        border: none ; 
+        width: 100% !important;
+        border-bottom: .15em solid $dark--clr ; 
+        margin: .5em 0 ; 
+    }
+    .swiper__box--bid {
+        @include dsply-flex(flex-start , space-between) ; 
+        width: 100%;
+        font-size: $font-size-small;
+        margin: 1em 0 0 0;
+        .swiper__box--bid__price {
+            @include dsply-column(flex-start , center) ; 
+            width: 100%;
+            .swiper__box--bid__status {
+                padding: .5em 0 0 0 ; 
+            }
+            .swiper__box--bid__price--system {
+                @include dsply-flex-cntr-cntr ; 
+                p {
+                    font-size: $font-size-normal;
+                    margin: .5em 0;
+                }
+                span {
+                    font-size: $font-size-small;
+                    margin: .2em 0 .2em 1em;
+                }
+            }
+        }
+        .swiper__box--bid__feedback {
+            @include dsply-flex-cntr-cntr ; 
+            padding: .3em .8em;
+            border-radius: .5em;
+            @include dsply-flex-cntr-cntr ; 
+            .popular__icon {
+                svg {
+                    height: 2rem;
+                }
+            }
+            .popular__like--count {
+                font-size: $font-size-small;
+                margin: 0 0 0 .5em;
+            }
+        }
+    }
+}

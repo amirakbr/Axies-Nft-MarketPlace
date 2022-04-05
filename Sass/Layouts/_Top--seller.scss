@@ -1,0 +1,92 @@
+@import '../Ultility/Variable' ; 
+.top__seller--dark{
+    color: $light--clr;
+    .top__seller--box {
+        border: .2em solid transparent ; 
+        transition: all .3s ease-in-out;
+        &:hover {
+            border: .2em solid $blue--violet--clr;
+            box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+            transform: translateY(.5em);
+        }
+    }
+}
+.top__seller--light{
+    color: $dark--clr;
+    .top__seller--box {
+        background-color: #e3e3ff;
+        border: .2em solid #e3e3ff;
+        transition: all .3s ease-in-out;
+        &:hover {
+            border: .2em solid $blue--violet--clr;
+            box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+            transform: translateY(.5em);
+        }
+    }
+}
+.top__seller {
+    margin-top: 4em;
+    .top__seller--header {
+        @include dsply-flex(center , space-between) ; 
+        margin: 0 2.5rem 2rem 2.5rem;
+        .top__seller--title {
+            font-size: $font-size-large;
+            padding: 1em;
+        }
+        .top__seller--link {
+            font-size: $font-size-small;
+            padding: 1em;
+        }
+    }
+        .top__seller--container {
+        margin: 0 2.5rem 0 2.5rem;
+        @include grid-repeat(5 , 1fr) ; 
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em 3em;
+        .top__seller--box {
+            @include dsply-flex(center , space-between) ; 
+            padding: .5em 1em;
+            border-radius: 2em ; 
+            .top__seller--img {
+                height: 8rem ; 
+                border-radius: 2rem ; 
+                img{
+                    border-radius: 2rem; 
+                }
+                .varify {
+                    position: absolute ; 
+                    padding: .3em;
+                    color: $light--clr ; 
+                    background-color: $blue--violet--clr ; 
+                    border-radius: 50% ; 
+                    @include dsply-column-cntr-cntr ; 
+                    font-size: $font-size-small; 
+                    height: 3rem;
+                    width: 3rem;
+                    right: -1.5rem;
+                    bottom: 0;
+                }
+            }
+            .top__seller--info {
+                @include dsply-column(flex-start  ,center) ;
+                height: 100%;
+                margin-left: 2em;
+                transition: all .3s ease-in-out;
+                .top__seller--idname {
+                    font-size: $font-size-normal; 
+                    margin: .3em 0;
+                }
+                .top__seller--totalIncome {
+                    font-size: $font-size-small;
+                    color: $gray-scale;
+                    font-weight: 900;
+                    margin: .3em 0;
+                    width: 100%;
+                    p {
+                        width: max-content;
+                    }
+                }
+            }
+        }
+    }
+}

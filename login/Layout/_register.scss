@@ -1,0 +1,234 @@
+@import "../../Sass/Ultility/Variable" ; 
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.dark__theme {
+    color: $light--clr;
+    background-color: $dark--purple--backgrnd--clr ;
+    font-family: "Roboto" , sans-serif;
+    button , input{
+        color: $light--clr;
+    }
+}
+.register {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    .register__container {
+        @include grid-repeat(6 , 1fr) ; 
+        height: 100%;
+        .register__left--side {
+            grid-column: 1/5;
+            overflow: hidden;
+            img {
+                transition: all 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+                z-index: +1000;
+                overflow: hidden;
+            }
+            &:hover {
+                img {
+                    scale: 1.2;
+                    overflow: hidden;
+                    object-position: left;
+                }
+            }
+        }
+        .register__right--side {
+            grid-column: 5/7;
+            @include dsply-column-cntr-cntr ;
+            width: 100%;
+            padding: 0 3em;
+            .register__right--side__container {
+                @include dsply-column-cntr-cntr ;
+                width: 100%;
+                .register__titel {
+                    font-size: $font-size-large;
+                }
+                .register__form {
+                    @include dsply-column-cntr-cntr ; 
+                    width: 100%;
+                    margin-top: 1em;
+                    .register__email , .register__password {
+                        width: 100%;
+                        border: none;
+                        margin: 1em 0;
+                        .register__email--title , .register__password--title {
+                            transform: translateY(3.2rem) translateX(2rem);
+                            display: block;
+                            font-size: $font-size-sub-normal;
+                            width: max-content;
+                            background-color: $dark--purple--backgrnd--clr;
+                            transition: all .3s ease-in-out;
+                            &::after {
+                                width: 1.3rem;
+                                height: 1.3rem;
+                                background-color: greenyellow;
+                                position: absolute;
+                                right: -2rem;
+                                top: 50%;
+                                content: "\f00c";
+                                font-family: "Font Awesome 6 Free";
+                                font-weight: 900;
+                                font-size: $font-size-small ;
+                                @include dsply-flex-cntr-cntr ; 
+                            }
+                        }
+                        .register__email--input , .register__password--input {
+                            width: 100%;
+                            border: .1em solid $gray-scale;
+                            padding: .5em 0 .5em 1em;
+                            font-size: $font-size-sub-normal;
+                            z-index: +10;
+                        }
+                        .passwordVisibility {
+                            position: absolute;
+                            right: 2rem;
+                            top: 54%;
+                            transform: translate(44% , 0%);
+                            cursor: pointer;
+                            z-index: +10000;
+                            &::before{
+                                font-family: "Font Awesome 6 Free";
+                                font-weight: 900;
+                                cursor: pointer;
+                                z-index: +10000;
+                                transition: all .5s ease-in-out;
+                            }
+                        }
+                    }
+                    .submit__register--form {
+                        margin-top: 1em;
+                        width: 100%;
+                        border: none;
+                        @include dsply-flex-cntr-cntr ; 
+                        padding: 1em 0;
+                        background-color: $gradiant-finish-purple;
+                        z-index: +10;
+                        &::before {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            right: 0;
+                            top: 0;
+                            background-color: white;
+                            content: "";
+                            transform-origin: right center;
+                            transform: scaleX(0);
+                            transition: transform 1s ease-in-out;
+                        }
+                        &:hover:before {
+                            transform-origin: left;
+                            transform: scaleX(1);
+                        }
+                        &:hover {
+                            color: black !important;
+                            button {
+                                color: black !important;
+                            }
+                        }
+                        button {
+                            font-size: $font-size-normal;
+                            transition: all .8s ease-in-out;
+                        }
+                    }
+                }
+                .sign--up {
+                    width: 100%;
+                    @include dsply-flex-cntr-cntr ; 
+                    margin-top: 1.5em;
+                    font-size: $font-size-small;
+                    z-index: +10;
+                    span {
+                        color: $gradiant-finish-purple ; 
+                        margin-left: .3em ; 
+                        font-size: $font-size-normal ;
+                    }
+                }
+                .refer__social {
+                    @include dsply-flex-cntr-cntr ; 
+                    width: 100%;
+                    margin-top: 1em;
+                    font-size: $font-size-normal;
+                    &::after , &::before{
+                        content: "";
+                        display: table;
+                        clear: both;
+                        width: 44%;
+                        height: .1em ;
+                        top: 50%;
+                        right: 0;
+                        position:absolute;
+                        background-color: whitesmoke;
+                        z-index: +100;
+                    }
+                    &::before {
+                        left: 0;
+                    }
+                }
+                .social__connect {
+                    @include dsply-flex-cntr-cntr ; 
+                    margin-top: 1.5em;
+                    font-size: $font-size-sub-large;
+                    z-index: +10;
+                    div {
+                        width: 4rem;
+                        height: 4rem;
+                        @include dsply-flex-cntr-cntr ; 
+                        margin: 0 .4em;
+                        border-radius: .3em;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            transform: translateY(-.7rem);
+                            border-radius: .8em;
+                        }
+                    }
+                    .twitter {
+                        background-color: #00b7ff;
+                    }
+                    .google {
+                        background-color: #ff3c00;
+                    }
+                    .github {
+                        background-color: black;
+                    }
+                    .facebook {
+                        background-color: #0087ff;
+                    }
+                }
+                    
+                
+            }
+        }
+    }
+}
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.unvisible::before{
+    content: "\f070";
+}
+.visible::before {
+    content: "\f06e";
+}
+.exit {
+    position: absolute;
+    @include dsply-flex-cntr-cntr ; 
+    top: -8rem;
+    left: 0;
+    color: $light--clr;
+    font-size: $font-size-normal;
+    z-index: +100;
+    &:hover {
+        i {
+            transform: translateX(-3rem) rotate(180deg);
+        }
+    }
+    i {
+        transform: rotate(180deg);
+        margin-right: 2rem;
+        transition: all .5s ease-in-out;
+    }
+}

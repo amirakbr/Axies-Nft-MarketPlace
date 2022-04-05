@@ -1,0 +1,77 @@
+@import '../Ultility/Variable' ; 
+
+.feature__dark {
+    color: $light--clr;
+}
+.feature__light {
+    color: $dark--clr;
+    i {
+        color: $light--clr;
+    }
+    svg {
+        color: $light--clr;
+    }
+}
+
+
+
+
+
+.feature__card--container {
+    @include grid-gtc-4(1fr , 1fr , 1fr , 1fr) ; 
+    align-items: flex-start;
+    grid-gap: 3em;
+    margin: 2rem 2.5rem;
+    padding: 4em 0;
+    .feature__card {
+        @include dsply-column-cntr-cntr  ;
+        .card__icon {
+            padding: 1rem;
+            font-size: 4rem;
+            @include dsply-flex-cntr-cntr ; 
+            border-radius: 1.5rem;
+            width: 8rem;
+            height: 8rem;
+            transition: all .3s ease-in-out;
+            svg {
+                height: 5rem;
+            }
+        }
+        .wallet {
+            background-color: $blue--violet--clr;
+        }
+        .collection {
+            background-color: $green--nut--clr;
+        }
+        .nfts {
+            background-color: $purple--clr ;
+        }
+        .listsale {
+            background-color: $tomato--red--clr;
+        }
+        .card__titel--wallet , .card__titel--listsale , .card__titel--nfts , .card__titel--collection{
+            font-size: $font-size-sub-large;
+            margin: 1.5em 0 ;
+            transition: all .3s ease-in-out;
+        }
+        .card__description {
+            font-size: $font-size-sub-normal;
+            text-align: center;
+        }
+        &:hover .card__titel--wallet {
+            color : $blue--violet--clr ; 
+        }
+        &:hover .card__titel--listsale{
+            color: $tomato--red--clr;
+        }
+        &:hover .card__titel--nfts{
+            color: $purple--clr ;
+        }
+        &:hover .card__titel--collection{
+            color: $green--nut--clr;
+        }
+        &:hover .card__icon {
+            transform: translateY(2rem);
+        }
+    }
+}

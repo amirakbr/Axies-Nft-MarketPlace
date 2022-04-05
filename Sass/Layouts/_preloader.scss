@@ -1,0 +1,47 @@
+@import '../Ultility/Variable' ; 
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: blueviolet;
+    @include dsply-flex-cntr-cntr ; 
+    .preloader__container {
+        @include dsply-column-cntr-cntr ; 
+        .preloader__animation--container {
+            @include dsply-flex-cntr-cntr ; 
+            .preloader__animation--left {
+                border: 4em solid transparent;
+                border-left: 4em solid black;
+                animation: left 8s ease-in-out infinite;
+            }
+            .preloader__animation--right {
+                border: 4em solid transparent;
+                border-right: 4em solid black;
+                animation: right 8s ease-in-out infinite;
+            }
+        }
+    }
+}
+@keyframes left {
+    0%{
+        border: 4em solid transparent;
+        border-left: 4em solid black;
+    }
+    49%{
+        transform: translateX(30rem);
+    }
+    50%{
+        border: 4em solid transparent;
+        border-right: 4em solid black;
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
+@keyframes right {
+    0%{}
+    100%{
+        transform: translateX(-30rem);
+    }
+}

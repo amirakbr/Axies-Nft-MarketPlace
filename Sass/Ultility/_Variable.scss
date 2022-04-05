@@ -1,0 +1,117 @@
+@mixin dsply-flex-cntr-cntr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin dsply-flex($align , $jst) {
+    display: flex;
+    align-items: $align;
+    justify-content: $jst;
+}
+@mixin dsply-column-cntr-cntr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin dsply-column($clalign , $cljst) {
+    display: flex;
+    flex-direction: column;
+    align-items: $clalign;
+    justify-content: $cljst;
+}
+@mixin grid-repeat($count , $style) {
+    grid-template-columns: repeat($count , $style);
+    display: grid;
+}
+@mixin grid-gtc-2($agtc2 ,$bgtc2 ) {
+    grid-template-columns: $agtc2 $bgtc2;
+    display: grid;
+}
+@mixin grid-gtc-3($agtc3 ,$bgtc3 , $cgtc3) {
+    grid-template-columns: $agtc3 $bgtc3 $cgtc3;
+    display: grid;
+}
+@mixin grid-gtc-4($agtc4 ,$bgtc4 , $cgtc4 , $dgtc4) {
+    grid-template-columns: $agtc4 $bgtc4 $cgtc4 $dgtc4;
+    display: grid;
+}
+@mixin grid-gtc-5($agtc5 ,$bgtc5 , $cgtc5 , $dgtc5 , $egtc5) {
+    grid-template-columns: $agtc5 $bgtc5 $cgtc5 $dgtc5 $egtc5;
+    display: grid;
+}
+$dark--clr : black ;  
+$light--clr : white ;
+$dark--purple--backgrnd--clr : #08002d ; 
+$primary--clr : rgb(187, 30, 255) ; 
+$blue--violet--clr : #5142fb ; 
+$green--nut--clr : #46a433 ; 
+$purple--clr : #9835fb  ;
+$tomato--red--clr : #df4949 ; 
+$gray-scale : #4d4d64 ;  
+$gray--backgrnd--scale--light : #343444 ; 
+$gray--fontclr--light : #797889 ; 
+$white-dark--fontclr : #ebebeb ; 
+$gradiant-start-pink : #c551e5 ; 
+$gradiant-finish-purple : #6551e6 ; 
+$light-gray-scale : rgb(192, 192, 192) ; 
+$dark--backgrndclr : #1b1b40; 
+$border--distance--clr : #2e2e48 ; 
+$font-size-sub-small : 1.3rem ;
+$font-size-small : 1.5rem ;
+$font-size-sup-small : 1.65rem ;
+$font-size-sub-normal : 1.8rem ; 
+$font-size-normal : 2rem ;  
+$font-size-sub-large : 2.5rem ; 
+$font-size-large : 3rem ;
+$font-size-super-large : 4rem ;
+@mixin before-link {
+    width: 100%;
+    height: .1em;
+    background-color: rebeccapurple;
+    display: table;
+    clear: both;
+    content: "";
+    position: absolute;
+    top: -.7em;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+@mixin before-custom($width) {
+    width: $width;
+    height: .15em;
+    background-color: blueviolet;
+    display: table;
+    content: "";
+    clear: both;
+    transition: all .8s ease-out;
+    opacity : 0 ; 
+}
+@mixin after-link {
+    width: 100%;
+    height: .1em;
+    background-color: rebeccapurple;
+    display: table;
+    clear: both;
+    content: "";
+    position: absolute;
+    bottom: -.7em;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+@mixin placehol($clrr) {
+    ::-webkit-input-placeholder { 
+        color: $clrr;
+    }
+    :-moz-placeholder { 
+        color: $clrr;
+       opacity:  1;
+    }
+    ::-moz-placeholder { 
+        color: $clrr;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { 
+        color: $clrr;
+    }
+}

@@ -1,0 +1,63 @@
+/// import variable sass file
+@import './Ultility/Variable' ; 
+/// import reset sass file
+@import './Basement/Reset' ; 
+/// import Animation Station 
+@import './Layouts/Animation__station' ; 
+/// import Layout's based on web page arrange
+
+@import './Layouts/Header' ; 
+
+
+@import './Layouts/Hero' ;
+
+
+@import './Layouts/Main' ;
+
+
+@import './Layouts/liveaucation' ; 
+
+
+@import './Layouts/Feature' ; 
+
+
+@import './Layouts/Popular' ; 
+
+
+@import './Layouts/Top--seller' ; 
+
+
+@import './Layouts/Today--picks' ; 
+
+
+@import './Layouts/Footer' ; 
+
+
+@import './Layouts/nodalWallet' ; 
+
+
+@import './Layouts/water--fall' ;
+
+
+@import './Layouts/Preload' ;
+
+
+
+
+//////////////////
+
+
+@import "../login/Layout/register" ; 
+
+
+
+/////////////////////
+
+
+@import "../product/Style/header__product" ; 
+
+
+@import "../product/Style/hero__product" ; 
+
+
+@import "../product/Style/main__product" ; 

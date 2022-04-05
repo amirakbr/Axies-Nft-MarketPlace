@@ -1,0 +1,476 @@
+@import '../../Sass/Layouts/Header' ; 
+@import '../../Sass/Ultility/Variable' ; 
+
+.darkkbody {
+    background: linear-gradient(141deg, #200054 0%, #08002d 51%, #200054 75%) !important;
+}
+.header__product {
+    background-image: url("../../Media/01_header/bg.jpg") ; 
+    background-position:center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    .darkHeader {
+        background-color: rgba(255, 255, 255, 0); 
+    }
+    .header{
+        border-bottom: .0008em solid $gray-scale;
+    }
+    .hero {
+        height: 35vh ; 
+        margin-bottom: 5rem;
+        color: white;
+        .hero__container{
+            @include dsply-column-cntr-cntr ; 
+            .hero__titel{
+                font-size: $font-size-super-large ; 
+            }
+            .hero--product__navigator {
+                @include dsply-flex-cntr-cntr ; 
+                margin-top: 2rem;
+                div {
+                    margin: 0 1rem;
+                    @include dsply-flex-cntr-cntr ; 
+                    font-size: $font-size-sub-normal;
+                    color: $light-gray-scale;
+                    
+                }
+                .home--link {
+                    &::after {
+                        display: block;
+                        content: "/";
+                        clear: both;
+                        margin-left: 1.5rem;
+                        font-size: $font-size-sub-large;
+                    }
+                }
+                .explore--link {
+                    &::after {
+                        display: block;
+                        content: "/";
+                        clear: both;
+                        margin-left: 1.5rem;
+                        font-size: $font-size-sub-large;
+                    }
+                }
+                .Current {
+                    color: black;
+                    font-size: $font-size-normal;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.maindark {
+    margin-top: 2rem;
+}
+footer {
+    margin-top: 3rem;
+}
+main {
+    margin: 0 2.5rem;
+    z-index: +1;
+    color: $light--clr;
+    .main {
+        .main__container{
+            @include grid-gtc-2(1fr , 1fr) ; 
+            grid-gap: 5rem ;
+            .main__item--image {
+                height:auto;
+                border-radius: 2rem;
+                img {
+                    border-radius: 2rem;
+                }
+            }
+            .main__item--details {
+                .item--details__titel {
+                    font-size: $font-size-large;
+                    word-spacing: .8rem ; 
+                    letter-spacing: .15rem ; 
+                }
+                .item--details__feeds {
+                    margin-top: 1.5rem ; 
+                    @include dsply-flex(center , space-between) ; 
+                    .item--details__feedback {
+                        @include dsply-flex-cntr-cntr ; 
+                        div {
+                            @include dsply-flex-cntr-cntr ; 
+                            margin-right: 1.5rem ;
+                            padding: .5rem 1.5rem ;
+                            background-color: $gray--backgrnd--scale--light;
+                            height: 4rem;
+                            border-radius: 1rem;
+                            font-size: $font-size-sub-normal;
+                            p {
+                                &::before {
+                                    margin-right: .8rem ; 
+                                    font-size: $font-size-sub-normal ; 
+                                }
+                            }
+                        }
+                        .item__feedback--view {
+                            p {
+                                @include dsply-flex-cntr-cntr ; 
+                                &::before {
+                                    content: "\f06e" ; 
+                                    display: block ; 
+                                    font-family: "Font Awesome 6 Free" ; 
+                                    font-weight: 900 ; 
+                                }
+                            }
+                        }
+                        .item__feedback--likes {
+                            p {
+                                @include dsply-flex-cntr-cntr ; 
+                                &::before{
+                                    content: "\f004" ; 
+                                    display: block ; 
+                                    font-family: "Font Awesome 6 Free" ; 
+                                    font-weight: 400 ; 
+                                }
+                            }
+                        }
+                    }
+                    .item--details__share {
+                        @include dsply-flex-cntr-cntr ; 
+                        i {
+                            padding: .5rem 1.5rem ;
+                            background-color: $gray--backgrnd--scale--light;
+                            height: 4rem;
+                            border-radius: 1rem;
+                            margin-left: 1.5rem ; 
+                            @include dsply-flex-cntr-cntr ; 
+                            font-size: $font-size-normal;
+                        }
+                    }
+                }
+                .item--details__property {
+                    @include grid-repeat(2,1fr) ; 
+                    grid-gap: 2rem;
+                    margin-top: 2rem;
+                    .item__owner , .item__creator{
+                        @include dsply-flex(center , flex-start) ; 
+                        padding: 1rem 2rem ;
+                        background-color: $gray--backgrnd--scale--light;
+                        border-radius: 2.3rem;
+                        .item__user--img {
+                            height: 6rem;
+                            margin-right: 1rem;
+                            border-radius: 1.8rem ; 
+                            img { 
+                                border-radius: 1.8rem ; 
+                            }
+                        }
+                        .item__user--container {
+                            @include dsply-column(flex-start , space-between) ; 
+                            .item__user--title {
+                                font-size: $font-size-sup-small;
+                                margin-bottom: .3rem;
+                                color: $white-dark--fontclr;
+                                font-weight: 350;
+                            }
+                            .item__user--username {
+                                font-size: $font-size-normal;
+                                margin-top: .3rem;
+                            }
+                        }
+                    }
+                }
+                .item__details--information {
+                    margin-top: 2rem;
+                    font-size: $font-size-sub-normal;
+                    color: $white-dark--fontclr;
+                    p {
+                        margin: .7rem 0; 
+                    }
+                }
+                .item__trade {
+                    @include grid-repeat(2,1fr) ; 
+                    margin-top: 2rem;
+                    grid-gap: 2rem;
+                    .item__currentBid {
+                        @include dsply-flex(center , space-between) ; 
+                        padding: 1.5rem 2rem ;
+                        background-color: $gray--backgrnd--scale--light;
+                        border-radius: 1.5rem;
+                        p {
+                            font-size: $font-size-small;  
+                        }
+                        span {
+                            font-size: $font-size-normal ; 
+                            @include dsply-flex-cntr-cntr ; 
+                            &::after {
+                                content: "= $12.246" ;
+                                clear: both ; 
+                                display: block ; 
+                                position: relative;
+                                font-size: $font-size-small ; 
+                            }
+                        }
+                    }
+                    .item__tradeOpenleftTime {
+                        @include dsply-flex(center , space-between) ; 
+                        padding: 1.5rem 2rem ;
+                        background-color: $gray--backgrnd--scale--light;
+                        border-radius: 1.5rem;
+                        p {
+                            font-size: $font-size-small;  
+                        }
+                        .item__tradeOpenleftTime--timer {
+                            @include dsply-flex-cntr-cntr ;
+                            font-size: $font-size-normal ; 
+                            .item__tradeOpenleftTime--timer__day , .item__tradeOpenleftTime--timer__hour , .item__tradeOpenleftTime--timer__minuet{
+                                margin-right: .6rem ; 
+                                @include dsply-flex-cntr-cntr ;
+                                &::after {
+                                    content: ":" ; 
+                                    clear: both ; 
+                                    display: block ; 
+                                    margin-left: .15rem ; 
+                                }
+                            }
+                        }
+                    }
+                }
+                .item__bid--submit {
+                    width: 100%;
+                    padding: 1.5rem 2rem ;
+                    border: .3rem solid white ; 
+                    border-radius: 10rem;
+                    @include dsply-flex-cntr-cntr ; 
+                    font-weight: 500;
+                    margin-top: 2rem;
+                    overflow: hidden;
+                    p {
+                        @include dsply-flex-cntr-cntr ; 
+                        color: $light--clr;
+                        font-size: $font-size-normal ; 
+                        z-index: +10;
+                        &::before{
+                            content: "\f290"; 
+                            display: block ; 
+                            font-family: "Font Awesome 6 Free" ; 
+                            font-weight: 900 ; 
+                            margin-top: -.5rem;
+                            margin-right: 1.5rem;
+                            clear: both;
+                            position: relative;
+                        }
+                    }
+                    &::before {
+                        width: 100%;
+                        height: 100%;
+                        background-color: $blue--violet--clr;
+                        content: "";
+                        clear: both;
+                        position: absolute;
+                        transform: scaleX(0);
+                        transform-origin:right center;
+                        right: 0;
+                        transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
+                        border-radius: 7rem;
+                    }
+                    &:hover:before{
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }
+                    &:hover {
+                        border: .3rem solid $gradiant-finish-purple;
+                        box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+                    }
+                }
+                .item__trade--history {
+                    margin-top: 2rem;
+                    width: 100%;
+                    .item__trade--history__container {
+                        width: 100%;
+                        @include dsply-column(flex-start , flex-start) ; 
+                        .item__trade--history__header {
+                            @include dsply-flex(flex-start , flex-start) ; 
+                            width: 100%;
+                            &::after {
+                                display: table;
+                                width: 100%;
+                                height: .22rem;
+                                clear: both;
+                                background-color : $border--distance--clr  ;  
+                                content: "";
+                                position: absolute;
+                                bottom: -1rem;
+                            }
+                            div {
+                                margin-right: 3rem;
+                                font-size: $font-size-sub-normal; 
+                            }
+                            .activeTab {
+                                @include dsply-column(flex-start , space-between) ; 
+                                color: $blue--violet--clr;
+                                &::after{
+                                    width: 100%;
+                                    content: "";
+                                    clear: both;
+                                    display: block;
+                                    height: .4rem;
+                                    background-color: $blue--violet--clr;
+                                    position: absolute;
+                                    bottom: -1rem;
+                                    z-index: +10;
+                                    transition: transform .5s ease-in-out;
+                                }
+                            }
+                        }
+                        .item__trade--history__board--view__container {
+                            width: 100%;
+                            @include dsply-column(flex-start , center) ; 
+                            margin-top: 1rem;
+                            .item__trade--history__board--view {
+                                @include dsply-flex(center , space-between) ; 
+                                width: 100%;
+                                margin: 1rem 0 0 0;
+                                &::after {
+                                    display: table;
+                                    width: 100%;
+                                    height: .22rem;
+                                    clear: both;
+                                    background-color : $border--distance--clr  ;  
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -1rem ; 
+                                }
+                                .item__trade--history__user--info {
+                                    @include dsply-flex(center , flex-start) ; 
+                                    margin-top: 1rem;
+                                    .user--trader__profile--image {
+                                        height: 6rem;
+                                        border-radius: 1.8rem ; 
+                                        img {
+                                            border-radius: 1.8rem ; 
+                                        }
+                                    }
+                                    .varified {
+                                        &::after {
+                                            position: absolute ; 
+                                            width: 2rem;
+                                            height: 2rem ; 
+                                            border-radius: 50% ; 
+                                            background-color: $blue--violet--clr ; 
+                                            bottom: 0 ; 
+                                            right: -.5rem;
+                                            content: "\f00c" ; 
+                                            display: block ; 
+                                            font-family: "Font Awesome 6 Free";
+                                            font-weight: 900;
+                                            @include dsply-flex-cntr-cntr ; 
+                                            font-size: $font-size-sub-normal;
+                                        }
+                                    }
+                                    .user--trader__info {
+                                        @include dsply-column(flex-start , center) ; 
+                                        margin-left: 2rem;
+                                        .item__trade--history__user--name {
+                                            font-size: $font-size-normal ; 
+                                            @include dsply-flex-cntr-cntr ; 
+                                        }
+                                        .bid--process {
+                                            &::after {
+                                                content: "Place a Bid";
+                                                display: table;
+                                                clear: both;
+                                                position: relative;
+                                                font-size: $font-size-sup-small;
+                                                margin-left: 1rem;
+                                                color: $white-dark--fontclr;
+                                            }
+                                        }
+                                        .bid--accepted {
+                                            &::after {
+                                                content: "Bid Accepted";
+                                                display: table;
+                                                clear: both;
+                                                position: relative;
+                                                font-size: $font-size-sup-small;
+                                                margin-left: 1rem;
+                                                color: $white-dark--fontclr;
+                                            }
+                                        }
+                                        .item__trade--history__time--bid {
+                                            margin-top: .7rem;
+                                            font-size: $font-size-small;
+                                            color: $light-gray-scale ; 
+                                        }
+                                    }
+                                }
+                                .item__trade--history__price {
+                                    p {
+                                        @include dsply-column-cntr-cntr ; 
+                                        font-size: $font-size-sup-small;
+                                        &::after{
+                                            content: "= 12,650$" ; 
+                                            clear: both ; 
+                                            display: block ; 
+                                            margin-top: .8rem ; 
+                                            font-size: $font-size-small;
+                                        }
+                                    }
+                                }
+                            }
+                            .lastboardview {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.block {
+    position: relative;
+  }
+  
+  .block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, $gradiant-start-pink, $gradiant-finish-purple, $green--nut--clr,rgb(52, 28, 121),$gradiant-start-pink,$gradiant-start-pink, 
+      $gradiant-finish-purple,$green--nut--clr,rgb(52, 28, 121), $gradiant-start-pink);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+    border-radius: 2.8rem;
+    display: none;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(10px);
+  }
+
+.block {
+    &:hover:after , &:hover:before {
+        display: block;
+    }
+}
+.blocklowradius {
+    &::after , &::before {
+        border-radius: 1.5rem ;
+    }
+}

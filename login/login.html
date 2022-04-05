@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="../Sass/style.css">
+    <style>
+        :root {
+            --disply1 : none ;
+            --disply : none ;
+            --disply2 : none ; 
+        }
+        .register__email--title::after {
+            display: var(--disply) !important;
+        }
+        .register__password--title::after {
+            display: var(--disply1) !important;
+        }
+        /*
+        .passwordVisibility {
+            display: var(--disply2);
+        }
+        */
+    </style>
+</head>
+<body class="darkbody">
+    <div class="register">
+        <div class="register__container">
+            <div class="register__left--side">
+                <img class="hero__img" src="../Media/08_login-register/4.jpg" loading="lazy">
+            </div>
+            <div class="register__right--side dark__theme" >
+                <div class="register__right--side__container">
+                    <a class="exit" href="../index.html">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <p>
+                            Move To The Main Page
+                        </p>
+                    </a>
+                    <h1 class="register__titel">
+                        Sign In
+                    </h1>
+                    <form class="register__form" action="#">
+                        <fieldset class="register__email">
+                            <label class="register__email--title" id="email" for="email">
+                                <p>
+                                    Email
+                                </p>
+                            </label>
+                            <input type="email" id="email" for="email" class="register__email--input">
+                        </fieldset>
+                        <fieldset class="register__password">
+                            <label class="register__password--title" id="password" for="password">
+                                <p>
+                                    Password
+                                </p>
+                            </label>
+                            <input type="password" id="password" for="password" class="register__password--input">
+                            <div class="passwordVisibility unvisible"></div>
+                        </fieldset>
+                        <fieldset class="submit__register--form">
+                            <button type="submit"> Sign in </button>
+                        </fieldset>
+                    </form>
+                    <p class="sign--up">
+                        New On our Platform? <span>Create an account</span>
+                    </p>
+                    <p class="refer__social">
+                        or
+                    </p>
+                    <div class="social__connect">
+                        <div class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                            
+                        </div>
+                        <div class="google">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="github">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

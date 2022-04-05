@@ -1,0 +1,108 @@
+.custom__star1 {
+    i {
+        animation: star1 5s ease-in-out infinite , blip .5s 2s ease-in-out ;        
+    }
+}
+.custom__star2 {
+    i {
+        animation: star2 5s linear infinite , blip .5s 4s ease-in-out ;
+    }
+}
+.custom__star3 {
+    i {
+        animation: star3 5s linear infinite , blip .5s 1s ease-in-out ;
+    }
+}
+.astro {
+    animation: astro 10s linear infinite;
+}
+.mercury {
+    animation: mercury 10s linear infinite;
+}
+@keyframes star1 {
+    0% {
+        transform: rotate(0deg) translateX(0rem) translateY(0rem);
+    }
+    50% {
+        transform: rotate(80deg) translateX(1rem) translateY(1rem);
+    }
+    100%{
+        transform: rotate(160deg) translateX(0rem) translateY(0rem);
+    }
+}
+@keyframes blip {
+    0%{
+        scale: 1.1;
+    }
+    25%{
+        scale: 1.5;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes star2 {
+    0% {
+        transform: rotate(0deg) translateX(0rem) translateY(0rem);
+    }
+    50% {
+        transform: rotate(-80deg) translateX(-1rem) translateY(-1rem);
+    }
+    100%{
+        transform: rotate(-160deg) translateX(0rem) translateY(0rem);
+    }
+}
+@keyframes star3 {
+    0% {
+        transform: rotate(0deg) translateX(0rem) translateY(0rem);
+    }
+    25% {
+        transform: rotate(30deg) translateX(1.5rem) translateY(1.5rem);
+    }
+    50%{
+        transform: rotate(80deg) translateX(0rem) translateY(0rem);
+    }
+    75%{
+        transform: rotate(30deg) translateX(-1.5rem) translateY(-1.5rem);
+    }
+    100%{
+        transform: rotate(0deg) translateX(0rem) translateY(0rem);
+    }
+}
+@keyframes astro {
+    0%{
+        transform: rotateX(180deg) rotate(104deg) translateY(0rem) translateX(0rem);
+    }
+    25%{
+        transform: rotateX(180deg) rotate(115deg) translateY(-8rem) translateX(+5rem);
+    }
+    50%{
+        transform: rotateX(180deg) rotate(104deg) translateY(0rem) translateX(0rem);
+    }
+    75%{
+        transform: rotateX(180deg) rotate(93deg) translateY(+8rem) translateX(-5rem);
+    }
+    100%{
+        transform: rotateX(180deg) rotate(104deg) translateY(0rem) translateX(0rem);
+    }
+}
+@keyframes mercury {
+    0%{
+        transform: translateY(0rem) rotateY(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: translateY(3rem) rotateY(25deg) rotateZ(23deg);
+    }
+    50%{
+        transform: translateY(0) rotateY(0deg) rotateZ(46deg);
+    }
+    75%{
+        transform: translateY(-3rem) rotateY(-25deg) rotateZ(23deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0deg) rotateZ(0deg);
+    }
+}
