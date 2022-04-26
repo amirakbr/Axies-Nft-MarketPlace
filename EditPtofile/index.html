@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../Sass/style.css">
+    <link rel="stylesheet" type="text/css" href="./Sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../swiper attachment/swiper-bundle.min.css">
+    <style>
+        :root {
+            --swiper-theme-color : #5142fb; 
+            --swiper-pagination-bullet-inactive-color : rgb(145, 145, 145) ; 
+            --swiper-pagination-bullet-size : 1.2rem  ;  
+            --input-padding : .5rem ; 
+            --input-chain : 1rem ; 
+            --label-p-width : 0rem ; 
+        }
+        .activelabel::after {
+            width: calc(45% - var(--label-p-width));
+        }
+        .activelabel::before {
+            width: calc(45% - var(--label-p-width));
+        }
+    </style>
+</head>
+<body class="darkkbody">
+    <section class="header__product">
+        <header class="header__item header nav darkHeader" >
+            <div class="header__title">
+                <img src="./Media/01_header/logo_dark.png" loading="lazy">
+            </div>
+                <div class="header__menu--right">
+                    <div class="header__menu--right__container">
+                        <div class="header__container">
+                            <div class="header__content">
+                                <p class="list__p">
+                                    Home
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header__container">
+                            <div class="header__content">
+                                <p class="list__p">
+                                    Explore
+                                </p>
+                                <i class="fa-solid fa-angle-down list__i"></i>
+                            </div>
+                                <ul class="menu darkmenu">
+                                    <li class=" menu--li move__menu--left">
+                                        <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                            <ul class="menu1 darkmenu">
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                    <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                </ul> 
+                        </div>
+                        <div class="header__container">
+                            <div class="header__content">
+                                <p class="list__p">
+                                    Activity
+                                </p>
+                                <i class="fa-solid fa-angle-down list__i"></i>
+                            </div>
+                            <ul class="menu darkmenu">
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class=" menu--li move__menu--left">
+                                    <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                        <ul class="menu1 darkmenu">
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__container">
+                            <div class="header__content">
+                                <p class="list__p">
+                                    Commuinity
+                                </p>
+                                <i class="fa-solid fa-angle-down list__i"></i>
+                            </div>
+                            <ul class="menu darkmenu">
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class=" menu--li move__menu--left">
+                                    <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                        <ul class="menu1 darkmenu">
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                    </ul>
+                                </li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                            </ul>
+                        </div>
+                        <div class="header__container">
+                            <div class="header__content">
+                                <p class="list__p">
+                                    Pages
+                                </p>
+                                <i class="fa-solid fa-angle-down list__i"></i>
+                            </div>
+                            <ul class="menu darkmenu">
+                                <li class=" menu--li move__menu--left">
+                                    <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                        <ul class="menu1 darkmenu">
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                    </ul>
+                                </li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                            </ul>
+                        </div>
+                        <div class="header__container">
+                            <div class="header__content">
+                                <p class="list__p">
+                                    Contact
+                                </p>
+                                <i class="fa-solid fa-angle-down list__i"></i>
+                            </div>
+                            <ul class="menu darkmenu">
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class=" menu--li move__menu--left">
+                                    <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                        <ul class="menu1 darkmenu">
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                        <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                    </ul>
+                                </li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                <li class="menu--li" ><p class="menu--p">Content</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu--left__container">
+                    <div class="header__search--box">
+                        <i class="se fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="notofifcation__status active__notification header__blackTheme">
+                    </div>
+                    <a href="../login/login.html" class="headeruser header__register--user header__blackTheme">
+                        <button>
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <div class="user__profile__container">
+                            <div class="user--profile__img">
+                                <img src="../Media/04_Live Auctions/image-box-10.jpg" loading="lazy">
+                            </div>
+                            <div class="user__property">
+                                <p>
+                                    See Your Own Property
+                                </p>
+                            </div>
+                            <div class="user__record">
+                                <p>
+                                    See Your Records And Withdraw
+                                </p>
+                            </div>
+                            <div class="user__marketplace">
+                                <p>
+                                    See Your Wallet 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="header__blackTheme blcktheme">
+                        <button class="theme__changer">
+                            <img src="./Media/01_header/moon-2.png" loading="lazy">
+                        </button>
+                    </div>
+                    <div class="header__lightTheme">
+                        <button class="theme__changer">
+                            <img src="./Media/01_header/sun.png" loading="lazy">
+                        </button>
+                    </div>
+                        <!--
+                        <a href="./login/login.html" class="header__register--user header__register--user1">
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div></div>
+                        </a>
+                        -->
+                </div>
+        </header>
+
+        <div class="hero">
+            <div class="hero__container">
+                <div class="hero__titel">
+                    <h1>
+                        Item Details 1
+                    </h1>
+                </div>
+                <div class="hero--product__navigator">
+                    <div class="home--link">
+                        <p>
+                            Home
+                        </p>
+                    </div>
+                    <div class="explore--link">
+                        <p>
+                            Page 1
+                        </p>
+                    </div>
+                    <div class="explore--link">
+                        <p>
+                            Author
+                        </p>
+                    </div>
+                    <div class="product--link Current">
+                        <p>
+                            Edit Profile
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="main__container">
+            <div class="left__side">
+                <div class="user__image">
+                    <img src="../Media/04_Live Auctions/image-box-10.jpg" loading="lazy">
+                </div>
+                <div class="user__image--button__container">
+                    <div class="upload upload__img">
+                        <p>
+                            Upload Image
+                        </p>
+                    </div>
+                    <div class="delete__img">
+                        <p>
+                            Delete
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right__side">
+                <div class="cover--image--uploader__container">
+                    <div class="cover--image--uploader__titel">
+                        <h2>
+                            Choice Your Cover Image
+                        </h2>
+                    </div>
+                    <!---->
+                    <div class="swiper cover--image--uploader__explore">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide cover--image--uploader__zone upload">
+                                <button>
+                                    Upload File
+                                </button>
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore" >
+                                <img src="../Media/07_Avatar/avt-1.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore" >
+                                <img src="../Media/07_Avatar/avt-2.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore" >
+                                <img src="../Media/07_Avatar/avt-3.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore" >
+                                <img src="../Media/07_Avatar/avt-5.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore" >
+                                <img src="../Media/07_Avatar/avt-6.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore">
+                                <img src="../Media/07_Avatar/avt-7.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore">
+                                <img src="../Media/07_Avatar/avt-8.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide cover--image--uploader__img--explore">
+                                <img src="../Media/07_Avatar/avt-9.jpg" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                    </div>
+                </div>
+                <div class="cover--image--uploader__container">
+                    <div class="cover--image--uploader__titel background--image--uploader__title">
+                        <h2>
+                            Choice Your Background Image
+                        </h2>
+                    </div>
+                    <!---->
+                    <div class="swiperr background--image--uploader__explore">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide background--image--uploader__zone upload">
+                                <button>
+                                    Upload File
+                                </button>
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/ballons.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/brian-suh-a4GET0s82rI-unsplash.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/colorfulldrops.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/fire.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/gradiant blue.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/leaves.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/pink and blue drops.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/snow.jpg" loading="lazy">
+                            </div>
+                            <div class="swiper-slide background--image--uploader__img--explore">
+                                <img src="./Media/02_cover/street.jpg" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-paginationI swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                    </div>
+                </div>
+                <hr >
+                <div class="account--info__container">
+                    <div class="personal--info__container">
+                        <div class="personal--info__title">
+                            <h2>
+                                Account Info
+                            </h2>
+                        </div>
+                        <div class="personal--info__form">
+                            <form action="#" class="personal--info__form__container">
+                                <label class="usernamelabel" for="username">
+                                    <p>
+                                        Display Name
+                                    </p>
+                                </label>
+                                <div class="username">
+                                    <input class="personal__input" type="text" name="name" id="username" placeholder="Amir Akbarzadeh">
+                                </div>
+                                <label class="customurllabel" for="customurl">
+                                    <p>
+                                        Custom URL
+                                    </p>
+                                </label>
+                                <div class="customurl">
+                                    <input class="personal__input" type="text" name="url" id="customurl" placeholder="amirakbr.com">
+                                </div>
+                                <label class="emaillabel" for="email">
+                                    <p>
+                                        Email
+                                    </p>
+                                </label>
+                                <div class="email">
+                                    <input class="personal__input" type="email" name="email" id="email" placeholder="amir.akbrzadh3@gmail.com">
+                                </div>
+                                <label class="textarealabel">
+                                    <p>
+                                        Bio
+                                    </p>
+                                </label>
+                                <textarea class="biotextarea" name="" id="textarea" cols="20" rows="10" style="resize: none;" placeholder="Type Some Thing About Yourself Your Favorite Song Your Lifestyle and etc ...">
+                                </textarea>
+                                
+                                <button class="submit--button" type="submit">Update Profile</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social--media--info__container">
+                        <div class="social--media--info__title">
+                            <h2>
+                                Connect Your Social Media
+                            </h2>
+                        </div>
+                        <div class="social--media--info__form">
+                            <form class="social--media--info__form__container">
+                                <div class="soccial__container">
+                                    <label class="facebooklabel" for="facebook">
+                                        <p>
+                                            Facebook
+                                        </p>
+                                    </label>
+                                    <div class="facebook__input">
+                                        <input class="social--media__input" id="facebook" type="text" name="username" placeholder="@Facebook username">
+                                    </div>
+                                    <button class="facebook__button">
+                                        <p>
+                                            Connect to Facebook
+                                        </p>
+                                    </button>
+                                </div>
+                                <div class="soccial__container">
+                                    <label class="twitterlabel" for="twitter">
+                                        <p>
+                                            Twitter
+                                        </p>
+                                    </label>
+                                    <div class="twitter__input">
+                                        <input class="social--media__input" id="twitter" type="text" name="username" placeholder="@Twitter username">
+                                    </div>
+                                    <button class="twitter__button">
+                                        <p>
+                                            Connect to Twitter
+                                        </p>
+                                    </button>
+                                </div>
+                                <div class="soccial__container">
+                                    <label class="discordlabel" for="discord">
+                                        <p>
+                                            Discord
+                                        </p>
+                                    </label>
+                                    <div class="discord__input">
+                                        <input class="social--media__input" id="discord" type="text" name="username" placeholder="@Discord username">
+                                    </div>
+                                    <button class="discord__button">
+                                        <p>
+                                            Connect to Discrod
+                                        </p>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer--dark">
+        <div class="footer__container">
+            <div class="footer__company--detail">
+                <div class="footer__company__logo">
+                    <img src="./Media/01_header/logo_dark.png" loading="lazy">
+                </div>
+                <div class="footer__company__deccription">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quidem.
+                    </p>
+                </div>
+            </div>
+                <div class="footer__links--account">
+                    <p>
+                        My Account
+                    </p>
+                    <ul>
+                        <li>Authors</li>
+                        <li>Collection</li>
+                        <li>Author Profile</li>
+                        <li>Create Item</li>
+                    </ul>
+                </div>
+                <div class="footer__links--resource">
+                    <p>
+                        Resource
+                    </p>
+                    <ul>
+                        <li>Help & Support</li>
+                        <li>Live Aucation</li>
+                        <li>Item Details</li>
+                        <li>Activity</li>
+                    </ul>
+                </div>
+                <div class="footer__links--company">
+                    <p>
+                        Company
+                    </p>
+                    <ul>
+                        <li>Explore</li>
+                        <li>Contact Us</li>
+                        <li>Our Blog</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            <div class="footer__subscription__container">
+                <p class="footer__subscription__container--title">
+                    Subscribe Us
+                </p>
+                <div class="footer__subscription--entry">
+                    <form action="#" class="footer__subscription--form">
+                        <input class="footer__subscription--input" type="text" placeholder="info@yourgmail.com">
+                        <button class="footer__subscription--submit" type="submit">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__subscription--icon__container">
+                    <div class="footer__subscription--icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="footer__subscription--icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="footer__subscription--icon">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div class="footer__subscription--icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="footer__subscription--icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="footer__subscription--icon">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="draganddrup">
+        <div class="draganddrup__container">
+            <div class="dragplace">
+                <h3>
+                    Drop Your File Here
+                </h3>
+                <button class="closebtn">
+                    +
+                </button>
+                <div class="dropzone">
+                    <h3>
+                        Drag Right Here ...
+                    </h3>
+                    <div class="graparrow arrow1">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="graparrow arrow2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="graparrow arrow3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="graparrow arrow4">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../swiper attachment/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+      
+</body>
+</html>

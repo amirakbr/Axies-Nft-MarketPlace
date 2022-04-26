@@ -1,0 +1,494 @@
+
+.header__product {
+    background-image: url("../../Media/01_header/bg.jpg") ; 
+    background-position:center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.main {
+    width: auto !important;
+    margin: 0 5rem;
+    position: relative;
+    margin-bottom: 15rem;
+    .main__container {
+        display: grid;
+        grid-template-columns: 2fr 4fr ; 
+        gap: 5rem;
+        align-items: flex-start;
+        position: relative;
+        .left__side {
+                width: 100%;
+                height: max-content;
+                background-color : #515173;
+                padding: 3rem 1.5rem;
+                border-radius: 2rem;
+            .user__image {
+                background-image: url("../../Media/02_cover/leaves.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex ;
+                align-items: center;
+                justify-content: center;
+                border-radius: 2rem;
+                padding: 2rem 0;
+                img {
+                    height: 30rem;
+                    width: 90%;
+                    border-radius: 50%;
+                    opacity: .96;
+                }
+            }
+            .user__image--button__container {
+                margin-top: 3rem;
+                .upload__img {
+                    &:hover:after  {
+                        transform: translateX(10rem);
+                    }
+                    &::after {
+                        content: "\f0c1";
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        width: 4rem;
+                        height: 3rem;
+                        @include dsply-flex-cntr-cntr ;
+                        transform: translateX(20rem);
+                        position: absolute;
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+                .delete__img{
+                    &:hover:after  {
+                        transform: translateX(10rem);
+                    }
+                    &::after {
+                        content: "\f1f8";
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        width: 4rem;
+                        height: 3rem;
+                        @include dsply-flex-cntr-cntr ;
+                        transform: translateX(20rem);
+                        position: absolute;
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+                .upload__img , .delete__img {
+                    width: 100%;
+                    border-radius: 5rem;
+                    border: .3rem solid $gray--fontclr--light;
+                    margin: 2rem 0 ;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center ;
+                    padding: 1rem 0;
+                    overflow: hidden;
+                    z-index: +2;
+                    transition: all .5s ease-in-out;
+                    box-shadow: 0rem 1rem 1rem -1rem #232f4d ;
+                    font-size: $font-size-normal ;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        transition: transform .4s ease-in-out;
+                        transform-origin: left;
+                        background-color: royalblue;
+                        z-index: 0;
+                        transition: transform .5s ease-in-out;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                    &:hover {
+                        box-shadow: 0rem 2rem 3rem 0rem #102046 ;
+                        transform: translateY(-.5rem);
+                    }
+                }
+            }
+        }
+        .right__side {
+            width: 100%;
+            position: relative;
+            .cover--image--uploader__container {
+                position: relative;
+                height: 100%;
+                .swiper-pagination  , .swiper-paginationI{
+                    position: absolute;
+                    margin-bottom: -8rem;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem .5rem;
+                    align-items: center;
+                    &::before {
+                        content: "";
+                        width: 30%;
+                        position:absolute;
+                        display: flex ; 
+                        justify-content: center;
+                        background-color: #82828291;
+                        height: 100%;
+                        border-radius: 3rem;
+                    }
+                }
+            }
+            hr {
+                top: 8rem;
+                margin: 7rem 0;
+                border: none;
+                border-bottom: .4rem solid $gray-scale;
+            }
+        }
+        .account--info__container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(30rem , 1fr));
+            margin-top: 15rem;
+            gap: 5rem;
+            .personal--info__container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .personal--info__title {
+                    width: 100%;
+                    margin: 3rem 0;
+                    font-size: 1.8rem;
+                    @include dsply-flex-cntr-cntr ; 
+                    word-break: keep-all;
+                    overflow: hidden;
+                    h2 {
+                        word-break: keep-all ; 
+                        background-color: transparent;
+                        z-index: +10;
+                    }
+                    &::before , &::after {
+                        content: "";
+                        width: 40%;
+                        display: table;
+                        clear: both;
+                        border-bottom: .2rem solid $light--clr; 
+                        background-color: white;
+                        position: absolute;
+                    }
+                    &::before {
+                        left: 0;
+                        transform: translateX(-6rem);
+                    }
+                    &::after {
+                        right: 0;
+                        transform: translateX(6rem);
+                    }
+                }
+                .personal--info__form {
+                    .personal--info__form__container {
+                        display: flex;
+                        flex-direction: column;
+                        @include placehol($gray-scale) ; 
+                        label {
+                            font-size: 1.5rem;
+                            width: 100%;
+                            margin: 1rem 0;
+                            margin-bottom: 1.5rem;
+                            font-size: $font-size-normal ; 
+                            transform: translateX(1rem); 
+                            p {
+                                width: max-content;
+                            }
+                        }
+                        input {
+                            padding: 1.5rem 0;
+                            padding-left: 4rem;
+                            width: 100%;
+                            color: $gray--fontclr--light;
+                            user-select: auto;
+                            z-index: +100;
+                            font-size: $font-size-normal ; 
+                        }
+                        textarea {
+                            z-index: +100;
+                        }
+                        .username , .customurl , .email{
+                            @include dsply-flex-cntr-cntr ; 
+                            border: .35rem solid $gray-scale;
+                            margin-bottom: 2rem;
+                            border-radius: 2rem;
+                            transition: all .3s ease-in-out;
+                            &::before {
+                                content: "\f007";
+                                font-family: "Font Awesome 6 Free";
+                                font-weight: 900;
+                                font-size: $font-size-sub-large; 
+                                transform: translateX(.5rem);
+                                width: 4rem;
+                                height: 4rem;
+                                @include dsply-flex-cntr-cntr ; 
+                            }
+                        }
+                        .customurl::before {
+                            content : "\f0c1" ; 
+                            transform: translateX(1rem) rotate(45deg);
+                        }
+                        .email::before {
+                            content: "\f0e0";
+                        }
+                        textarea {
+                            background-color: transparent;
+                            border: .35rem solid $gray-scale;
+                            border-radius: 2rem;
+                            font-size: $font-size-normal ; 
+                            @include placehol($gray-scale) ; 
+                            color : $gray--fontclr--light ; 
+                            padding: 1rem 1.5rem;
+                            outline: none;
+                            user-select: auto ; 
+                            transition: all .3s ease-in-out;
+                        }
+                        .submit--button {
+                            @include button-before-transform(royalblue) ;
+                            @include dsply-flex-cntr-cntr ; 
+                            color: $light--clr;
+                            &::before {
+                                z-index: -1;
+                            }
+                            &:hover:after {
+                                transform: translateX(10rem);
+                            }
+                            &::after {
+                                content: "\f304" ;
+                                font-family: "Font Awesome 6 Free";
+                                font-weight: 900;
+                                @include dsply-flex-cntr-cntr ; 
+                                transform: translateX(20rem);
+                                transition: all .5s ease-in-out;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+            }
+            .social--media--info__container {
+                width: 100%;
+                .social--media--info__title {
+                    width: 100%;
+                    margin: 3rem 0;
+                    font-size: 1.8rem;
+                    @include dsply-flex-cntr-cntr ; 
+                    word-break: keep-all;
+                    overflow: hidden;
+                    h2 {
+                        word-break: keep-all ; 
+                        background-color: transparent;
+                        z-index: +10;
+                    }
+                    &::before , &::after {
+                        content: "";
+                        width: 40%;
+                        display: table;
+                        clear: both;
+                        border-bottom: .2rem solid $light--clr; 
+                        background-color: white;
+                        position: absolute;
+                    }
+                    &::before {
+                        left: 0;
+                        transform: translateX(-13rem);
+                    }
+                    &::after {
+                        right: 0;
+                        transform: translateX(13rem);
+                    }
+                }
+                .social--media--info__form {
+                    .social--media--info__form__container {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        .soccial__container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            @include placehol($gray-scale) ; 
+                            label {
+                                font-size: 1.5rem;
+                                width: 100%;
+                                margin: 1rem 0;
+                                margin-bottom: 1.5rem;
+                                font-size: $font-size-normal ; 
+                                transform: translateX(1rem); 
+                                p {
+                                    width: max-content;
+                                }
+                            }
+                            input {
+                                padding: 1rem 0;
+                                padding-left: 4rem;
+                                width: 100%;
+                                margin: .5rem 0;
+                                color: $gray--fontclr--light;
+                                user-select: auto;
+                                z-index: +100;
+                                font-size: $font-size-normal ; 
+                            }
+                            .facebook__input , .twitter__input , .discord__input {
+                                @include dsply-flex-cntr-cntr ; 
+                                border: .35rem solid $gray-scale;
+                                margin-bottom: 2rem;
+                                border-radius: 2rem;
+                                width: 100%;
+                                transition: all .3s ease-in-out;
+                                &::before {
+                                    content: "\f39e";
+                                    font-family: "Font Awesome 6 Brands";
+                                    font-weight: 900;
+                                    font-size: $font-size-sub-large; 
+                                    transform: translateX(.5rem);
+                                    width: 4rem;
+                                    height: 4rem;
+                                    @include dsply-flex-cntr-cntr ; 
+                                    transition: all .3s ease-in-out;
+                                }
+                            }
+                            .twitter__input::before {
+                                content : "\f099" ;
+                            }
+                            .discord__input::before {
+                                content: "\f392";
+                            }
+                            button {
+                                @include button-before-transform(royalblue) ; 
+                                width: max-content;
+                                padding: 1.2rem 8rem;
+                                color: $light--clr ;
+                                @include dsply-flex-cntr-cntr ; 
+                                &:hover p::before {
+                                    transform: translateX(-500%) translateY(.25rem);
+                                }
+                                &:hover p::after {
+                                    transform: translateX(12rem) translateY(.25rem);
+                                }
+                                p {
+                                    @include dsply-flex-cntr-cntr ; 
+                                    &::before , &::after {
+                                        content: "\f0c1";
+                                        font-family: "Font Awesome 6 Free";
+                                        font-weight: 900;
+                                        font-size: $font-size-sub-large; 
+                                        width: 4rem;
+                                        height: 4rem;
+                                        position: absolute;
+                                        transition: all .3s ease-in-out;
+                                    }
+                                    &::before {
+                                        transform: translateX(-12rem) translateY(.25rem);
+                                    }
+                                    &::after {
+                                        font-family: "Font Awesome 6 Brands";
+                                        transform: translateX(500%) translateY(.25rem);
+                                    }
+                                }
+                            }
+                            .facebook__button {
+                                p {
+                                    &::after {
+                                        content: "\f39e";
+                                    }
+                                }
+                            }
+                            .twitter__button {
+                                p {
+                                    &::after {
+                                        content : "\f099" ;
+                                    }
+                                }
+                            }
+                            .discord__button {
+                                p {
+                                    &::after {
+                                        content: "\f392";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.background--image--uploader__title {
+    margin-top: 10rem !important ;
+}
+.activelabel {
+    transform: translateX(0) !important;
+    font-size: $font-size-sup-normal !important;
+    @include dsply-flex-cntr-cntr ; 
+    p{
+        @include dsply-flex-cntr-cntr ; 
+        transform: translateY(0rem);
+        animation: activelabelcontent .5s .2s ease-in-out forwards;
+    }
+    &::after , &::before {
+        content: "";
+        display: table;
+        clear: both;
+        position: absolute;
+        width: calc(10%);
+        border-bottom: .2rem solid white;
+        transform: scaleX(0);
+        animation: peusudu .1s .3s linear;
+        animation-fill-mode: forwards;
+    }
+    &::after {
+        right: 0;
+        transform-origin: right;
+    }
+    &::before {
+        left: 0;
+        transform-origin: left;
+    }
+}
+@keyframes peusudu {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes activelabelcontent {
+    0% {
+        transform: translateY(0rem);
+    }
+    100%{
+        transform: translateY(-1rem);
+        color: $blue--violet--clr ; 
+    }
+}
+.personal--info__container {
+    &::before , &::after{
+        content: "";
+        display: table;
+        clear: both;
+        position: absolute;
+        border: .3rem solid white;
+        border-right-color: white;
+        border-right-style: solid;
+        border-right-width: 0.3rem;
+        width: 200%;
+        height: 110%;
+        border-right: none;
+        top: -5%;
+        left: -50%;
+        border-radius: 2rem 0 0 2rem;
+    }
+    &::after {
+        left: -25%;
+        top: -2.5%;
+        height: 105%;
+    }
+}

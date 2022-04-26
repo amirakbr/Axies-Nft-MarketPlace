@@ -6363,7 +6363,7 @@ a {
 }
 
 .header__product {
-  background-image: url("../../Media/01_header/bg.jpg");
+  background-image: url("../Media/header/bg.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -6380,9 +6380,11 @@ a {
 }
 
 .header__product .hero {
-  height: 35vh;
+  height: 45vh;
   margin-bottom: 5rem;
   color: white;
+  -webkit-box-shadow: inset 0rem -3rem 3rem -2rem #959595a3;
+          box-shadow: inset 0rem -3rem 3rem -2rem #959595a3;
 }
 
 .header__product .hero .hero__container {

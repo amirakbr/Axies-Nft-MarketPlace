@@ -1,0 +1,133 @@
+.draganddrup {
+    position: fixed;
+    z-index: +1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000da;
+    display: none;
+    .closebtn {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        font-size: 10rem;
+        color: $light--clr;
+        right: 10rem;
+        top: 0;
+        z-index: +10000;
+        transform: rotate(45deg); ;
+    }
+    .draganddrup__container {
+        width: 100%;
+        height: 100%;
+        @include dsply-column-cntr-cntr ; 
+        .dragplace {
+            width: 100%;
+            height: 100%;
+            @include dsply-column-cntr-cntr ;
+                h3 {
+                    font-size: $font-size-large ; 
+                    color: $light--clr;
+                    margin-bottom: 4rem;
+                }
+            .dropzone {
+                width: 80%;
+                height: 40%;
+                @include dsply-column-cntr-cntr ;
+                border: .5rem dashed white;
+                border-radius: 2rem;
+                h3 {
+                    font-size: $font-size-sup-normal;
+                    margin-bottom: 0;
+                }
+            }
+            .graparrow {
+                width: 10rem;
+                height: 10rem;
+                color: white;
+                position: absolute;
+            }
+            .arrow1 {
+                top: -$stage1;
+                left: -$stage1;
+                transform: rotate(135deg);
+                animation: arrow1 2s ease-in-out infinite;
+            }
+            .arrow2 {
+                top: -$stage1;
+                right: -$stage1;
+                transform: rotate(-135deg);
+                animation: arrow2 2s ease-in-out infinite;
+            }
+            .arrow3 {
+                bottom: -$stage1;
+                right: -$stage1;
+                transform: rotate(-45deg);
+                animation: arrow3 2s ease-in-out infinite;
+            }
+            .arrow4 {
+                bottom: -$stage1;
+                left: -$stage1;
+                transform: rotate(45deg);
+                animation: arrow4 2s ease-in-out infinite;
+            }
+        }
+    }
+}
+@keyframes arrow1 {
+    0%{
+        top: -$stage1;
+        left: -$stage1;
+    }
+    50%{
+        top: -$stage2;
+        left: -$stage2;
+    }
+    0%{
+        top: -$stage1;
+        left: -$stage1;
+    }
+}
+@keyframes arrow2 {
+    0%{
+        top: -$stage1;
+        right: -$stage1;
+    }
+    50%{
+        top: -$stage2;
+        right: -$stage2;
+    }
+    0%{
+        top: -$stage1;
+        right: -$stage1;
+    }
+}
+@keyframes arrow3 {
+    0%{
+        bottom: -$stage1;
+        right: -$stage1;
+    }
+    50%{
+        bottom: -$stage2;
+        right: -$stage2;
+    }
+    0%{
+        bottom: -$stage1;
+        right: -$stage1;
+    }
+}
+@keyframes arrow4 {
+    0%{
+        bottom: -$stage1;
+        left: -$stage1;
+    }
+    50%{
+        bottom: -$stage2;
+        left: -$stage2;
+    }
+    0%{
+        bottom: -$stage1;
+        left: -$stage1;
+    }
+}

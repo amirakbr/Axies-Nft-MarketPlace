@@ -1,0 +1,17 @@
+*
+, *::after 
+, *::before 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.5rem;
+    overflow-x: hidden;
+}

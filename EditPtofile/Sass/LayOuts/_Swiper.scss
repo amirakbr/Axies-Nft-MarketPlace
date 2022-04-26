@@ -1,0 +1,117 @@
+.cover--image--uploader__explore , .background--image--uploader__explore {
+    margin-top: 5rem !important;
+    position:relative !important;
+    width: 80rem !important;
+    overflow: hidden ; 
+    .swiper-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        .cover--image--uploader__zone {
+            width: 35rem !important;
+        } 
+        .swiper-slide {
+            height: 14rem !important ;
+            border-radius: 2.3rem !important;
+            position: relative !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden !important;
+            border: .3rem solid $gray-scale;
+            transition: all .1s ease-in-out;
+            &::after {
+                content:"\00a0" + "Select" + "\00a0" + "\00a0" + "\00a0" + "\f058"; 
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                display: block;
+                clear: both;
+                position: absolute;
+                z-index: +10;
+                width: 104%;
+                height: 50%;
+                bottom: 0;
+                @include dsply-flex-cntr-cntr ; 
+                background-color: #57575796;
+                font-size: $font-size-small;
+                letter-spacing: .1rem;
+                transition: all .5s ease-in-out;
+                transform: translateY(100%);
+                transform-origin: bottom;
+            }
+            &:hover {
+                border: .45rem solid $gradiant-finish-purple;
+            }
+            &:hover:after {
+                transform: translateY(0);
+            }
+            &:hover img {
+                transform: scale(1.15);
+            }
+            img {
+                border-radius: 2rem;
+                width: 100%;
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+            }
+        }
+        .cover--image--uploader__zone , .background--image--uploader__zone{
+            border-radius: 2rem;
+            &::after {
+                content: none;
+            }
+            &:hover button::after  {
+                transform: translateX(7rem);
+            }
+            &:hover button::before {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+            button::after {
+                content: "\f0c1";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                width: 4rem;
+                height: 3rem;
+                @include dsply-flex-cntr-cntr ;
+                transform: translateX(20rem);
+                position: absolute;
+                transition: transform .3s ease-in-out;
+            }
+            button {
+                padding: 1.5rem 5rem;
+                border: .2rem solid white;
+                color: white;
+                font-size: $font-size-sub-normal;
+                border-radius: 10rem;
+                overflow: hidden;
+                @include dsply-flex-cntr-cntr ;
+                transition: all .5s ease-in-out;
+                box-shadow: 0rem 1rem 2rem -1rem #4d68ae;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform .4s ease-in-out;
+                    transform-origin: left;
+                    background-color: royalblue;
+                    z-index: 0;
+                    transition: transform .5s ease-in-out;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    z-index: -1;
+                }
+                &:hover {
+                    box-shadow: 0rem 1.5rem 2rem -1rem #4d68ae;
+                    transform: translateY(-.5rem);
+                }
+            }
+        }
+        .background--image--uploader__zone {
+            height: 18rem !important;
+        }
+        .background--image--uploader__img--explore {
+            height: 18rem !important;
+        }
+    }
+}

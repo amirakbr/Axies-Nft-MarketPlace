@@ -1,0 +1,103 @@
+@import "../../../Sass/Ultility/Variable" ; 
+@import "../../../Sass/Layouts/water--fall" ; 
+.header__item{
+    height: 12vh;
+}
+.header__search--box {
+    margin-right: 4rem !important;
+    transition: all .3s ease-in-out !important;
+    padding: .7em 1em !important;
+    &:hover {
+        background-color: $gray-scale;
+        border-radius: 1rem !important;
+    }
+}
+.headeruser {
+    &:hover .user__profile__container {
+        transform: scaleY(1);
+    }
+    .user__profile__container {
+        position: absolute;
+        padding: 2rem 3rem;
+        color: $light--clr ;
+        top: 9vh;
+        background-color: $gradiant-finish-purple;
+        right: -2rem;
+        @include dsply-column-cntr-cntr ; 
+        z-index: +1000000;
+        border-radius: 2rem;
+        width: 45rem;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all .8s ease-in-out;
+        &::before {
+            content: "";
+            border: 1.3rem solid $gradiant-finish-purple;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -1.3rem;
+            right: 2rem;
+        }
+        .user--profile__img {
+            width: 30rem;
+            height: 20rem;
+            @include dsply-flex-cntr-cntr ; 
+            margin-bottom: 3rem;
+            background-image: url("../../Media/02_cover/leaves.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 2rem;
+            padding: 1rem 0;
+            &::before {
+                content: none !important;
+            }
+            img {
+                width:70%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        div {
+            font-size: $font-size-normal;
+            padding: 1rem 0;
+            margin: 1rem 0;
+            @include dsply-flex-cntr-cntr ; 
+            justify-content: flex-start;
+            &:hover:before {
+                transform: scaleX(1);
+                width: 5rem;
+            }
+            &::before {
+                content: "";
+                width: 0rem;
+                border: .2rem solid $light--clr;
+                margin-right: 2rem;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+.active__notification {
+    &::before {
+        content: "\f0f3" ;
+        font-family : "Font Awesome 6 Free" ;
+        font-weight : 900 ; 
+    }
+}
+.notofifcation__status {
+    &::after {
+        content: "7";
+        position: absolute;
+        background-color: red;
+        border-radius: 20rem;
+        padding: .1rem .8rem;
+        font-size: 2rem ;
+        font-weight: 500 ;
+        @include dsply-flex-cntr-cntr ;
+        top: -1.1rem;
+        right: calc(100% - 1rem);
+    }
+}
