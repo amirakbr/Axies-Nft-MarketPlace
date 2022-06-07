@@ -9,8 +9,8 @@ const min1 = document.querySelectorAll('.count1--min') ;
 const sec1 = document.querySelectorAll('.count1--sec') ;
 
 
-var countDownDate1 = new Date("May 18, 2022 15:37:25").getTime();
-var countDownDate2  = new Date("May 22, 2022 22:00:00").getTime() ; 
+var countDownDate1 = new Date("Dec 18, 2022 15:37:25").getTime();
+var countDownDate2  = new Date("Dec 22, 2022 22:00:00").getTime() ; 
 
 var x = setInterval(function() {
 

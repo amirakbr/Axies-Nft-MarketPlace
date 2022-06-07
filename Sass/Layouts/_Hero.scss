@@ -115,7 +115,7 @@
                     border-radius: 3rem;
                     margin: 0 1.5em;
                     transition: all .3s ease-in-out;
-                    .explorebtn , .createbtn {
+                    .explorebtn , .createbtn , .createbtnlink{
                         font-size: $font-size-sub-normal;
                         @include dsply-flex-cntr-cntr ;
                         i {

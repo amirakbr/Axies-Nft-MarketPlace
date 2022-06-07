@@ -1754,7 +1754,7 @@ a {
   transition: all .3s ease-in-out;
 }
 
-.hero .hero__container .hero__left--container .hero__button--container .hero__button .explorebtn, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtn {
+.hero .hero__container .hero__left--container .hero__button--container .hero__button .explorebtn, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtn, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtnlink {
   font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1767,11 +1767,11 @@ a {
           justify-content: center;
 }
 
-.hero .hero__container .hero__left--container .hero__button--container .hero__button .explorebtn i, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtn i {
+.hero .hero__container .hero__left--container .hero__button--container .hero__button .explorebtn i, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtn i, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtnlink i {
   margin-right: .3em;
 }
 
-.hero .hero__container .hero__left--container .hero__button--container .hero__button .explorebtn p, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtn p {
+.hero .hero__container .hero__left--container .hero__button--container .hero__button .explorebtn p, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtn p, .hero .hero__container .hero__left--container .hero__button--container .hero__button .createbtnlink p {
   margin-left: .3em;
 }
 
@@ -6363,7 +6363,7 @@ a {
 }
 
 .header__product {
-  background-image: url("../Media/header/bg.jpg");
+  background-image: url("../../Media/01_header/bg.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -6380,11 +6380,9 @@ a {
 }
 
 .header__product .hero {
-  height: 45vh;
+  height: 35vh;
   margin-bottom: 5rem;
   color: white;
-  -webkit-box-shadow: inset 0rem -3rem 3rem -2rem #959595a3;
-          box-shadow: inset 0rem -3rem 3rem -2rem #959595a3;
 }
 
 .header__product .hero .hero__container {
