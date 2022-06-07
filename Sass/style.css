@@ -742,7 +742,7 @@ a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   border-radius: .5em;
-  z-index: 100;
+  z-index: 1000;
   padding: .5em 0em;
 }
 
@@ -805,7 +805,7 @@ a {
           transform: scaleX(0);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  z-index: 2;
+  z-index: 1002;
   border-radius: .5em;
   overflow: auto;
 }
@@ -5725,7 +5725,7 @@ a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   border-radius: .5em;
-  z-index: 100;
+  z-index: 1000;
   padding: .5em 0em;
 }
 
@@ -5788,7 +5788,7 @@ a {
           transform: scaleX(0);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  z-index: 2;
+  z-index: 1002;
   border-radius: .5em;
   overflow: auto;
 }
