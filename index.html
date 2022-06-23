@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axies</title>
     <link rel="icon" sizes="16*16" href="./Media/01_header/moon-2.png">
+    <link rel="stylesheet" type="text/css" href="./ResponsiveAsset/px1240/px1240.css">
     <link rel="stylesheet" type="text/css" href="./Sass/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -145,17 +146,17 @@
                     </div>
                 </div>
             </div>
+            <div class="header__wallet">
+                <button class="header__wallet--button">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p>
+                        Wallet Connect
+                    </p>
+                </button>
+            </div>
             <div class="header__menu--left__container">
                 <div class="header__search--box">
                     <i class="se fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="header__wallet">
-                    <button class="header__wallet--button">
-                        <i class="fa-solid fa-wallet"></i>
-                        <p>
-                            Wallet Connect
-                        </p>
-                    </button>
                 </div>
                 <div class="header__blackTheme">
                     <button class="theme__changer">
@@ -167,28 +168,24 @@
                         <img src="./Media/01_header/sun.png" loading="lazy">
                     </button>
                 </div>
-                    <a href="./EditPtofile/index.html" class="header__register--user header__register--user1">
-                        <button>
-                            <i class="fa-solid fa-user"></i>
+                    <div class="header__register--user header__register--user1">
+                        <button class="header__user--icon">
                         </button>
                         <div class="register__content">
-                        <div class="signin">
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                            <p>
-                                Sign into your account 
-                            </p>
-                        </div>
-                        <div class="signup">
+                            <div class="signin">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <p>
+                                    Sign into your account 
+                                </p>
+                            </div>
+                            <div class="signup">
                                 <i class="fa-solid fa-user-plus"></i>
-                            <p>
-                                you are new register
-                            </p>
+                                <p>
+                                    you are new register
+                                </p>
+                            </div>
                         </div>
-                        <a href="./EditPtofile/index.html">
-                            Edit Your Profile
-                        </a>
-                        </div>
-                    </a>
+                    </div>
                     <!--
                     <a href="./login/login.html" class="header__register--user header__register--user1">
                         <div>
@@ -1884,10 +1881,11 @@
             </div>
         </div>
     </div>-->
+    <script src="./ResponsiveAsset/Responsiv.js"></script>
     <script src="./swiper attachment/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper", {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 10,
           loop: true,
           grabCursor: true,

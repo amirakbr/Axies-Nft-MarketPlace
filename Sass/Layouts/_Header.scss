@@ -12,8 +12,8 @@
         background-color: $gray-scale;
     }
     .header__wallet {
-        border: .2em solid $blue--violet--clr;
-        border-radius: .5em;
+        border: .3rem solid $blue--violet--clr;
+        border-radius: .8rem;
         transition: all .3s ease-in-out;
         overflow: hidden;
         &::before {
@@ -27,24 +27,24 @@
             transform-origin:right center;
             right: 0;
             transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
-            border-radius: .4em;
+            border-radius: 0rem;
         }
         &:hover:before{
             transform-origin: left;
             transform: scaleX(1);
         }
         &:hover {
-            border: .2em solid $gradiant-finish-purple;
+            border: .3rem solid $gradiant-finish-purple;
             box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
         }
     }
     .header__search--box {
         background-color: none;
-        border-radius: 0 0 1.5em 1.5em;
+        border-radius: 0 0 2rem 2rem;
     }
     .header__lightTheme  , .header__register--user{
-        border: .2em solid $purple--clr;
-        border-radius: .5em;
+        border: .3rem solid $purple--clr;
+        border-radius: .8rem;
         button {
             i {
                 color: $light--clr;
@@ -59,34 +59,42 @@
     .header__menu--right__container {
         color: $dark--clr;
     }
+    .header__wallet {
+        border: .3rem solid $purple--clr;
+        border-radius: .8rem;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        i , p {
+            transition: all .1s ease-in-out;
+        }
+    &::before {
+        width: 100%;
+        height: 100%;
+        background-color: $blue--violet--clr;
+        content: "";
+        clear: both;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin:right center;
+        right: 0;
+        transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
+        border-radius: 0rem;
+    }
+    &:hover {
+        i , p {
+            color:  $light--clr !important;
+        }
+    }
+    &:hover:before{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    }
     .header__menu--left__container {
         color: $dark--clr !important;
         .header__search--box {
-            border: .2em solid $purple--clr;
-            border-radius: .5em;
-        }
-        .header__wallet {
-            border: .2em solid $purple--clr;
-            border-radius: .5em;
-            transition: all .3s ease-in-out;
-        overflow: hidden;
-        &::before {
-            width: 100%;
-            height: 100%;
-            background-color: $blue--violet--clr;
-            content: "";
-            clear: both;
-            position: absolute;
-            transform: scaleX(0);
-            transform-origin:right center;
-            right: 0;
-            transition: transform .5s cubic-bezier(.03,1.51,.44,.82);
-            border-radius: .5em;
-        }
-        &:hover:before{
-            transform-origin: left;
-            transform: scaleX(1);
-        }
+            border: .3rem solid $purple--clr;
+            border-radius: .8rem;
         }
         .header__wallet--button {
             i {
@@ -101,8 +109,8 @@
         background-color: $purple--clr;
     }
     .header__blackTheme  , .header__register--user{
-        border: .2em solid $purple--clr;
-        border-radius: .5em;
+        border: .3rem solid $purple--clr;
+        border-radius: .8rem;
         button {
             i {
                 color: $dark--clr;
@@ -150,7 +158,7 @@
     }
     background-color: $dark--purple--backgrnd--clr;
     color: $light--clr;
-    border: .1em solid $light--clr; 
+    border: .3rem solid $light--clr; 
     .menu--p {
         &::before {
             background-color: $light--clr;
@@ -184,14 +192,14 @@
 
 
 .header{
-    height: 9vh;
     @include dsply-flex(center , space-between) ; 
     width: 100%;
     top: 0;
     left: 0;
+    padding: 0 3rem;
     .header__title {
-        margin-left: 1em;
-        height: 7vh ; 
+        margin-left: 1rem;
+        height: 5rem;
     }
         .header__menu--right__container {
             font-size: $font-size-sup-small;
@@ -199,12 +207,12 @@
             .header__container {
                 @include dsply-column-cntr-cntr ; 
                 font-size: $font-size-sup-small;
-                margin: 0 .1em 0 0 ;
+                margin: 0 .3rem 0 0 ;
                 .header__content {
                     @include dsply-flex-cntr-cntr ;
-                    padding: .5em 1em;
+                    padding: .5rem 1rem;
                     p {
-                        margin: 0 .3em 0 0;
+                        margin: 0 .7rem 0 0;
                     } 
                     i {
                         transform: translateY(0);
@@ -212,55 +220,88 @@
                     }
                 }
                 &:hover i{
-                    transform: translateY(.6em);
+                    transform: translateY(1rem);
                 }
                 &:hover .menu {
                     transform: scaleY(1) ; 
                 }
             }
         }
+        .header__wallet {
+            .header__wallet--button {
+                font-size: $font-size-sup-small;
+                @include dsply-flex-cntr-cntr ; 
+                padding: 1rem 1.5rem;
+                i {
+                    font-size: $font-size-sup-small;
+                    margin-right: 1.5rem;
+                }
+                p {
+                    font-size: $font-size-sup-small;
+                }
+            }
+        }
         .header__menu--left__container {
             @include dsply-flex(center , space-between) ; 
             font-size: $font-size-sup-small;
-            margin-right: 1em;
+            margin-right: 1.5rem;
             .header__search--box {
                 @include dsply-flex-cntr-cntr ; 
-                margin-right: 2em;
-                padding: .5em 1em;
+                margin-right: 2.5rem;
+                padding: 1rem 1.5rem;
                 bottom: 0;
-            }
-            .header__wallet {
-                margin-right: 3em;
-                .header__wallet--button {
-                    font-size: $font-size-sup-small;
-                    @include dsply-flex-cntr-cntr ; 
-                    padding: .5em 1em;
-                    i {
-                        font-size: $font-size-sup-small;
-                        margin-right: 1em;
-                    }
-                    p {
-                        font-size: $font-size-sup-small;
-                    }
-                }
             }
             .header__blackTheme , .header__lightTheme , .header__register--user{
                 @include dsply-flex-cntr-cntr ; 
-                padding: .5em;
+                padding: 1rem;
                 width: 4rem;
                 height: 4rem;
-                border-radius: .5em;
+                border-radius: 1rem;
             }
             .header__register--user {
                 i {
                     font-size: $font-size-normal;
                 }
+                .header__user--icon {
+                    &::before , &::after {
+                        content: "\f007";
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        color: white;
+                        font-size: $font-size-normal;
+                    }
+                    &::after {
+                        content: "\f107";
+                        font-size: $font-size-sup-normal;
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50% , 0%);
+                        z-index: -1;
+                        top: 0;
+                        opacity: 0;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                &:hover {
+                    .header__user--icon {
+                        &::after {
+                            top: 150%;
+                            opacity: 1;
+                        }
+                    }
+                    .register__content {
+                        opacity: 1;
+                        top: 170%;
+                        z-index: +10;
+                        transform: scaleY(1);
+                    }
+                }
             }
             .header__blackTheme{
-                margin-right: 1em;
+                margin-right: 1.5rem;
             }
             .header__lightTheme {
-                margin-right: 1.5em;
+                margin-right: 2rem;
             }
         }
     }
@@ -272,12 +313,12 @@
     transform-origin: top;
     transform: scaleY(0);
     transition: all .5s ease-in-out;
-    border-radius: .5em;
+    border-radius: 1rem;
     z-index: 1000;
-    padding: .5em 0em;
+    padding: 1rem 0em;
     .menu--li {
         transition: all .2s ease-in-out;
-        padding: 1em .5em;
+        padding: 1.5rem 1rem;
         .menu--p{
             width: 100%;
             @include dsply-flex(center  , space-between) ; 
@@ -306,25 +347,25 @@
     transform: scaleX(0);
     transition: all .5s ease-in-out;
     z-index: 1002;
-    border-radius: .5em;
+    border-radius: 1rem;
     overflow: auto;
     .menu--li1 {
         transition: all .2s ease-in-out;
-        padding: 1em .5em;
+        padding: 1.5rem 1rem;
         .menu--p1 {
             @include dsply-flex(center ,flex-start) ; 
             &::before{
                 content: "";
                 display: table;
                 clear: both;
-                height: .15em;
+                height: .45rem;
                 width: 0em;
-                margin-right: .2em;
+                margin-right: 1.2rem;
                 transition: all .3s ease-in-out;
             }
         }
         &:hover .menu--p1::before {
-            width: 2em;
+            width: 2.5rem;
         }
     }
     &::before {
@@ -348,7 +389,7 @@
     from{
     }
     to{
-        bottom: -.6em;
+        bottom: -1rem;
         background-color: white;
         border-radius: 0 0 0em 0em;
         color: black;
@@ -357,7 +398,7 @@
 }
 @keyframes deactivedark {
     from{
-        bottom: -.6em;
+        bottom: -1rem;
         background-color: white;
         border-radius: 0 0 0em 0em;
         color: black;
@@ -366,7 +407,7 @@
     to{
         bottom: 0em;
         background-color: none;
-        border-radius:.5em;
+        border-radius:1rem;
         color: white;
         font-size: $font-size-sub-normal;
     }
@@ -378,20 +419,20 @@
     top: 9vh;
     background-color: $light--clr;
     z-index: +100000;
-    border: .1em solid $light--clr;
-    border-radius: .5em;
+    border: .6rem solid $light--clr;
+    border-radius: 1.1rem;
     color: $dark--clr ;
     @include placehol(black) ; 
     .header__search--block__container {
         @include dsply-flex(center , flex-start) ; 
         .header__search--block__icon {
-            margin-left: 2em;
-            padding: 1em;
-            border-right: .2em solid $dark--purple--backgrnd--clr;
+            margin-left: 2.5rem;
+            padding: 1.5rem;
+            border-right: .5rem solid $dark--purple--backgrnd--clr;
             font-size: $font-size-sup-small;
         }
         .header__search--block__input {
-            padding: 1em;
+            padding: 1.5rem;
             width: 100%;
             input {
                 width: 100%;
@@ -399,7 +440,7 @@
                 transition: all .3s ease-in-out;
                 color: $dark--clr ;
                 &:focus {
-                    padding-left: 2em;
+                    padding-left: 2.5rem;
                     font-size: $font-size-normal;
                 }
             }
@@ -443,15 +484,15 @@
     height: max-content;
     right: 0;
     background-color: $dark--purple--backgrnd--clr;
-    padding:1em .5em .5em .5em;
+    padding:1.5rem 1rem 1rem 1rem;
     z-index: +100;
     @include dsply-column-cntr-cntr ; 
     color: $light--clr;
     font-size: $font-size-sup-small;
-    border-radius: .5em 0 0 .5em;
-    border-bottom: .01em solid $light--clr;
-    border-left: .01em solid $light--clr;
-    border-top: .01em solid $light--clr;
+    border-radius: 1rem 0 0 1rem;
+    border-bottom: .06rem solid $light--clr;
+    border-left: .06rem solid $light--clr;
+    border-top: .06rem solid $light--clr;
     top: 10rem;
     opacity: 0;
     transform: translateX(-40rem);
@@ -471,12 +512,12 @@
     }
     .header__register--user{
         @include dsply-flex-cntr-cntr ; 
-        margin-top: 1em;
+        margin-top: 1.5rem;
         .header__register--user__notification {
-            padding: .5em;
-            border: .2em solid $gray-scale;
-            border-radius: .5em;
-            margin-left: 1em;
+            padding: 1rem;
+            border: .3rem solid $gray-scale;
+            border-radius: 1rem;
+            margin-left: 1.5rem;
             button {
                 i {
                     font-size: $font-size-normal;
@@ -503,31 +544,25 @@
 .register__content{
     color: $light--clr ; 
     @include dsply-column-cntr-cntr ; 
+    align-items: flex-start;
     position: absolute;
-    border: .1em solid white;
-    padding: .5em 1em;
-    border-radius: .5em;
+    border: .2rem solid white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
     background-color: $dark--purple--backgrnd--clr;
     z-index: +100;
     right: 0;
-    top: 110%;
+    top: 0;
     transform: scaleY(0);
+    z-index: -1;
     transform-origin: top;
-    transition: all .5s ease-in-out;
-    width : 40rem ; 
-    &::before {
-        background-color: $light--clr ; 
-        position: absolute ; 
-        top: -.3em; 
-        right: .5em;
-        content: "" ;
-        border: .3em solid $light--clr ; 
-        transform: rotate(45deg) ; 
-    }
+    transition-delay: .1s;
+    transition: all .3s ease-in-out;
+    width : 30rem ; 
     .signin , .signup {
         @include dsply-flex-cntr-cntr ;
         font-size: $font-size-sub-normal;
-        padding: .5em 1em;
+        padding: 1rem 1.5rem;
         transition: all .3s ease-in-out;
         transform: translateX(0);
         &:hover {
@@ -542,192 +577,4 @@
             margin-left: 1rem;
         }
     }
-    .signup {
-        border-top: .1em solid white;
-    }
 }
-/*
-@import '../Ultility/Variable' ; 
-@import './water--fall' ; 
-.header{
-    width: 100%;
-    height: 10vh;
-    .header__container {
-        height: 100%;
-        @include dsply-flex(center ,space-between) ; 
-        margin: 0 2.5rem;
-        .header__logo {
-            margin-left: 1em; 
-            height: 8vh ; 
-        }
-        .header__list--container {
-            @include dsply-flex-cntr-cntr ; 
-                .list__container1 {
-                    @include dsply-flex-cntr-cntr ; 
-                    .list__link {
-                        @include dsply-flex-cntr-cntr ; 
-                        color: $light--clr;
-                        padding: .5em .5em; 
-                        margin-right: .5em;
-                        .list__p {
-                            font-size: $font-size-sub-normal ; 
-                            margin-right: .2em; 
-                        }
-                        .list__i {
-                            font-size: $font-size-small ; 
-                            margin-left: .2em ;
-                        }
-                        
-                    }
-                    &:hover .water--fall__menu1 , &:hover .water--fall__menu2 {
-                        opacity: 1;
-                        transform: translateX(0) ; 
-                    } 
-            }
-        }
-        .header__tools--container {
-            @include dsply-flex-cntr-cntr ; 
-            .header__search {
-                padding: 1em;
-                position: absolute;
-                left: -6rem;
-                font-size: $font-size-sub-normal ; 
-                border-radius: 1rem 1rem 0 0px;
-                color: $light--clr;
-            }
-            .header__connect--wallet {
-                margin: 0 2em 0 .5em ; 
-                padding: .8em ; 
-                border: .2em solid #5142fb;
-                border-radius: 3rem;
-                transition: all .3s ease-in-out;
-                &:hover {
-                    border: .2em solid $light--clr;
-                    background-color:#5142fb ; 
-                }
-                button {
-                    @include dsply-flex-cntr-cntr ; 
-                    font-size: $font-size-sub-normal ; 
-                    transition: all .3s ease-in-out;
-                    color: $light--clr;
-                    i , p{
-                        margin: 0 .5em ;
-                    }
-                }
-            }
-            .header__theme--changer {
-                @include dsply-flex-cntr-cntr ; 
-                .light__theme , .dark__theme{
-                    padding: .5em ;
-                    background-color:#343444;
-                    width: 4rem;
-                    height: 4rem;
-                    margin: 0 .5em;
-                    @include dsply-flex-cntr-cntr ; 
-                    border-radius: .7rem;
-                    box-shadow: 3rem -5rem 2rem 3rem #0f0079;
-                }
-            }
-        }
-    }
-}
-.header__search--active {
-    animation: search-open .2s linear forwards;
-}
-.header__search--de--active {
-    animation: search-close .2s linear forwards;
-}
-@keyframes search-close {
-    from {
-        padding: 0.8em 1.5em;
-        position: absolute;
-        left: -8rem;
-        background: white;
-        font-size: $font-size-normal ; 
-        color: black;
-        bottom: -1.3rem;
-        border-radius: 1rem 1rem 0 0px;
-    }
-    to {
-        padding: .5em;
-        position: absolute;
-        left: -6rem;
-        font-size: $font-size-sub-normal ; 
-        border-radius: 1rem 1rem 0 0px;
-        color: $light--clr;
-    }
-}
-@keyframes search-open {
-    from {
-        padding: 0.8em 1.5em;
-        position: absolute;
-        left: -6rem;
-        font-size: $font-size-sub-normal ; 
-        border-radius: 1rem 1rem 0 0px;
-        color: $light--clr;
-    }
-    to {
-        padding: 0.8em 1.5em;
-        position: absolute;
-        left: -8rem;
-        background: white;
-        font-size: $font-size-normal ; 
-        color: black;
-        bottom: -1.3rem;
-        border-radius: 1rem 1rem 0 0px;
-    }
-}
-.header__search--box {
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    z-index: +10000;
-    opacity: 0;
-    .header__search--box__container {
-        display: flex;
-        align-items: center;
-        .header__search--box__icon {
-            padding: 1em;
-            font-size: $font-size-sup-small;
-        }
-        .header__search--box__input {
-            width: 100%;
-            padding: 1em;
-            padding-left: .5em;
-            input {
-                width: 100%;
-                font-size: $font-size-normal;
-            }
-        }
-    }
-}
-@keyframes searchbox-drop {
-    0%{
-        top: 0;
-        opacity: 0;
-    }
-    100%{
-        top: 12vh;
-        opacity: 1;
-    }
-}
-@keyframes searchbox-close {
-    0%{
-
-    }
-    100%{
-        top: 0;
-        opacity: 0;
-        display: none;
-    }
-}
-.hidden {
-    display: none;
-}
-.searchbox-open {
-    animation: searchbox-drop .5s ease-in-out forwards;
-}
-.searchbox-closee{
-    animation: searchbox-close .5s ease-in-out forwards;
-}
-*/

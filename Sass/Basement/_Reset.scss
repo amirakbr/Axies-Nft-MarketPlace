@@ -11,10 +11,13 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     font-size: 1.5rem;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100vw;
 }
 .darkbody {
     background: linear-gradient(141deg , rgb(28, 0, 73) 0% , $dark--purple--backgrnd--clr 51% , rgb(28, 0, 73) 75%);

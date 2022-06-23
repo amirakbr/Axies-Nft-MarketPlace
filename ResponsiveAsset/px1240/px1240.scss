@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1240px) {
+  .header__menu--left__container {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    position: absolute !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 100% !important;
+    z-index: +100;
+    .header__search--box , .header__blackTheme , .header__lightTheme , .header__register--user{
+      margin:  0 100% 0 0 !important;
+    }
+  }
+}
