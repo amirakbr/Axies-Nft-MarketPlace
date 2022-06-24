@@ -1,0 +1,11 @@
+@media only screen and (max-width : 1000px) {
+    .header__title , .header__menu--right {
+        display: none;
+    }
+    .hamburger {
+        display: block !important;
+        .header__title , .header__menu--right {
+            display: flex !important;
+        }
+    }
+}

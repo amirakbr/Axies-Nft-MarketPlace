@@ -2,14 +2,17 @@
   .header__menu--left__container {
     flex-direction: column !important;
     gap: 1rem !important;
-    position: absolute !important;
     margin: 0 !important;
+    padding: 0.5rem 1rem;
     position: absolute !important;
     right: 0 !important;
     top: 100% !important;
     z-index: 100;
+    background-color: #08002d !important;
+    margin: 0 3rem 0 0 !important;
+    border-radius: 0 0 1rem 1rem;
   }
   .header__menu--left__container .header__search--box, .header__menu--left__container .header__blackTheme, .header__menu--left__container .header__lightTheme, .header__menu--left__container .header__register--user {
-    margin: 0 100% 0 0 !important;
+    margin: 0 0 0 0 !important;
   }
 }/*# sourceMappingURL=px1240.css.map */

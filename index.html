@@ -7,6 +7,7 @@
     <title>Axies</title>
     <link rel="icon" sizes="16*16" href="./Media/01_header/moon-2.png">
     <link rel="stylesheet" type="text/css" href="./ResponsiveAsset/px1240/px1240.css">
+    <link rel="stylesheet" type="text/css" href="./ResponsiveAsset/px1000/px1000.css">
     <link rel="stylesheet" type="text/css" href="./Sass/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,10 +17,151 @@
 </head>
 <body class="darkbody"> 
     <header class="header darkHeader nav" >
-        <div class="header__title">
+        <div class="hamburger" >
+            <div class="hamburger__container">
+                <div class="hamburger__icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+                <div class="headder__content">
+                    <div class="header__title">
+                        <img src="./Media/01_header/logo_dark.png" loading="lazy">
+                    </div>
+                        <div class="header__menu--right">
+                            <div class="header__menu--right__container">
+                                <div class="header__container">
+                                    <div class="header__content">
+                                        <p class="list__p">
+                                            Home
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="header__container">
+                                    <div class="header__content">
+                                        <p class="list__p">
+                                            Explore
+                                        </p>
+                                        <i class="fa-solid fa-angle-down list__i"></i>
+                                    </div>
+                                        <ul class="menu darkmenu">
+                                            <li class=" menu--li move__menu--left">
+                                                <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                                    <ul class="menu1 darkmenu">
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                    <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                            <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        </ul> 
+                                </div>
+                                <div class="header__container">
+                                    <div class="header__content">
+                                        <p class="list__p">
+                                            Activity
+                                        </p>
+                                        <i class="fa-solid fa-angle-down list__i"></i>
+                                    </div>
+                                    <ul class="menu darkmenu">
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class=" menu--li move__menu--left">
+                                            <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                                <ul class="menu1 darkmenu">
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__container">
+                                    <div class="header__content">
+                                        <p class="list__p">
+                                            Commuinity
+                                        </p>
+                                        <i class="fa-solid fa-angle-down list__i"></i>
+                                    </div>
+                                    <ul class="menu darkmenu">
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class=" menu--li move__menu--left">
+                                            <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                                <ul class="menu1 darkmenu">
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                    </ul>
+                                </div>
+                                <div class="header__container">
+                                    <div class="header__content">
+                                        <p class="list__p">
+                                            Pages
+                                        </p>
+                                        <i class="fa-solid fa-angle-down list__i"></i>
+                                    </div>
+                                    <ul class="menu darkmenu">
+                                        <li class=" menu--li move__menu--left">
+                                            <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                                <ul class="menu1 darkmenu">
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                    </ul>
+                                </div>
+                                <div class="header__container">
+                                    <div class="header__content">
+                                        <p class="list__p">
+                                            Contact
+                                        </p>
+                                        <i class="fa-solid fa-angle-down list__i"></i>
+                                    </div>
+                                    <ul class="menu darkmenu">
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class=" menu--li move__menu--left">
+                                            <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
+                                                <ul class="menu1 darkmenu">
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                                <li class="menu--li1" ><p class="menu--p1">Content</p></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                        <li class="menu--li" ><p class="menu--p">Content</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="header__title" >
             <img src="./Media/01_header/logo_dark.png" loading="lazy">
         </div>
-            <div class="header__menu--right">
+            <div class="header__menu--right" >
                 <div class="header__menu--right__container">
                     <div class="header__container">
                         <div class="header__content">
