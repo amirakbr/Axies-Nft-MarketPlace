@@ -79,10 +79,10 @@
     }
 }
 .hero {
-    height: 91vh;
     z-index: 5;
+    margin-top: 5rem !important;
     .hero__container {
-        margin: 0 2.5rem;
+        padding: 0 2.5rem;
         height: 100%;
         overflow: hidden ; 
         @include grid-gtc-2(1fr , 1fr) ;

@@ -16,4 +16,16 @@
       margin:  0 0 0 0 !important;
     }
   }
+  .feature__card--container {
+    grid-template-columns: repeat(auto-fit , minmax(28.7rem , 1fr)) !important;
+    .last--feature__card {
+      grid-column: 2/3;
+    }
+  }
+  .top__seller--container {
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr)) !important;
+  }
+  .todaypicks__card--container {
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr)) !important;
+  }
 }

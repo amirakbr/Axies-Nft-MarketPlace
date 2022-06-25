@@ -1,4 +1,12 @@
 @media only screen and (max-width: 1000px) {
+  .header__menu--left__container {
+    display: none !important;
+  }
+
+  .header__tools {
+    display: flex !important;
+  }
+
   .header__title, .header__menu--right {
     display: none;
   }
@@ -8,5 +16,55 @@
   }
   .hamburger .header__title, .hamburger .header__menu--right {
     display: flex !important;
+  }
+
+  .hero .hero__container {
+    grid-template-columns: 1fr 0 !important;
+  }
+  .hero .hero__container .hero__left--container {
+    z-index: 100 !important;
+    align-items: center !important;
+    background-color: rgba(60, 60, 60, 0.2784313725);
+    padding: 5rem 0.5rem;
+    border-radius: 4rem;
+  }
+  .hero .hero__container .hero__left--container .hero__button--container {
+    justify-content: space-evenly !important;
+    width: 100% !important;
+  }
+  .hero .hero__container .hero__left--container .hero__button--container .hero__button {
+    margin: 0 0 !important;
+  }
+  .hero .hero__container .hero__right--container {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .last--feature__card {
+    grid-column: auto !important;
+  }
+
+  .popular__box--container {
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr)) !important;
+  }
+  .popular__box--container .popular__image--container {
+    width: 100% !important;
+  }
+
+  .todayPicks__category--card2, .todayPicks__category--card3, .todayPicks__category--card4 {
+    display: none !important;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)) !important;
+  }
+  .footer__container .footer__subscription__container {
+    width: 100% !important;
+  }
+  .footer__container .footer__subscription__container .footer__subscription--entry, .footer__container .footer__subscription__container .footer__subscription--form {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=px1000.css.map */

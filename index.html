@@ -8,6 +8,7 @@
     <link rel="icon" sizes="16*16" href="./Media/01_header/moon-2.png">
     <link rel="stylesheet" type="text/css" href="./ResponsiveAsset/px1240/px1240.css">
     <link rel="stylesheet" type="text/css" href="./ResponsiveAsset/px1000/px1000.css">
+    <link rel="stylesheet" type="text/css" href="./ResponsiveAsset/px430/px430.css">
     <link rel="stylesheet" type="text/css" href="./Sass/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +29,77 @@
                     <div class="header__title">
                         <img src="./Media/01_header/logo_dark.png" loading="lazy">
                     </div>
-                        <div class="header__menu--right">
+                    <div class="header__tools">
+                        <div class="header__tools__container">
+                            <div class="header__search--box">
+                                <i class="se fa-solid fa-magnifying-glass"></i>
+                            </div>    
+                            <div class="header__blackTheme">
+                                <button class="theme__changer">
+                                    <img src="./Media/01_header/moon-2.png" loading="lazy">
+                                </button>
+                            </div>
+                            <div class="header__lightTheme">
+                                <button class="theme__changer">
+                                    <img src="./Media/01_header/sun.png" loading="lazy">
+                                </button>
+                            </div>
+                            <div class="header__register--user header__register--user1">
+                                <button class="header__user--icon">
+                                </button>
+                                <div class="register__content">
+                                    <div class="signin">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                        <p>
+                                            Sign into your account 
+                                        </p>
+                                    </div>
+                                    <div class="signup">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        <p>
+                                            you are new register
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                        <div class="header__menu--left__container">
+                        <div class="header__search--box">
+                            <i class="se fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="header__blackTheme">
+                            <button class="theme__changer">
+                                <img src="./Media/01_header/moon-2.png" loading="lazy">
+                            </button>
+                        </div>
+                        <div class="header__lightTheme">
+                            <button class="theme__changer">
+                                <img src="./Media/01_header/sun.png" loading="lazy">
+                            </button>
+                        </div>
+                            <div class="header__register--user header__register--user1">
+                                <button class="header__user--icon">
+                                </button>
+                                <div class="register__content">
+                                    <div class="signin">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                        <p>
+                                            Sign into your account 
+                                        </p>
+                                    </div>
+                                    <div class="signup">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        <p>
+                                            you are new register
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                    <div class="header__menu--right">
                             <div class="header__menu--right__container">
                                 <div class="header__container">
                                     <div class="header__content">
@@ -45,9 +116,11 @@
                                         <i class="fa-solid fa-angle-down list__i"></i>
                                     </div>
                                         <ul class="menu darkmenu">
+                                            <div class="closeMenu"></div>
                                             <li class=" menu--li move__menu--left">
                                                 <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
                                                     <ul class="menu1 darkmenu">
+                                                    <div class="closeMenu"></div>
                                                     <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                     <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                     <li class="menu--li1" ><p class="menu--p1">Content</p></li>
@@ -72,11 +145,13 @@
                                         <i class="fa-solid fa-angle-down list__i"></i>
                                     </div>
                                     <ul class="menu darkmenu">
+                                        <div class="closeMenu"></div>
                                         <li class="menu--li" ><p class="menu--p">Content</p></li>
                                         <li class="menu--li" ><p class="menu--p">Content</p></li>
                                         <li class=" menu--li move__menu--left">
                                             <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
                                                 <ul class="menu1 darkmenu">
+                                                <div class="closeMenu"></div>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
@@ -99,11 +174,13 @@
                                         <i class="fa-solid fa-angle-down list__i"></i>
                                     </div>
                                     <ul class="menu darkmenu">
+                                        <div class="closeMenu"></div>
                                         <li class="menu--li" ><p class="menu--p">Content</p></li>
                                         <li class="menu--li" ><p class="menu--p">Content</p></li>
                                         <li class=" menu--li move__menu--left">
                                             <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
                                                 <ul class="menu1 darkmenu">
+                                                <div class="closeMenu"></div>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                             </ul>
@@ -119,9 +196,11 @@
                                         <i class="fa-solid fa-angle-down list__i"></i>
                                     </div>
                                     <ul class="menu darkmenu">
+                                        <div class="closeMenu"></div>
                                         <li class=" menu--li move__menu--left">
                                             <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
                                                 <ul class="menu1 darkmenu">
+                                                <div class="closeMenu"></div>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
@@ -140,10 +219,12 @@
                                         <i class="fa-solid fa-angle-down list__i"></i>
                                     </div>
                                     <ul class="menu darkmenu">
+                                        <div class="closeMenu"></div>
                                         <li class="menu--li" ><p class="menu--p">Content</p></li>
                                         <li class=" menu--li move__menu--left">
                                             <p class="menu--p">Content <i class="fa-solid fa-angle-right"></i></p>
                                                 <ul class="menu1 darkmenu">
+                                                <div class="closeMenu"></div>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
                                                 <li class="menu--li1" ><p class="menu--p1">Content</p></li>
@@ -154,9 +235,9 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="header__title" >
             <img src="./Media/01_header/logo_dark.png" loading="lazy">
@@ -470,7 +551,7 @@
                     </p>
                 </a>
             </div>
-            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper__container swiper__container--dark">
+            <div id="smallSwipwing" class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper__container swiper__container--dark">
                 <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-11168px, 0px, 0px);" id="swiper-wrapper-e97646d8104660f4" aria-live="polite">
                   <div onclick="location.href='product/index.html'" class="swiper-slide swiper__box--container swiper__card" data-swiper-slide-index="0" style="width: 1366px; margin-right: 30px;" role="group" aria-label="1 / 6">
                     <div class="swiper__box--img">
@@ -944,7 +1025,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="feature__card">
+                <div class="feature__card last--feature__card">
                     <div class="card__icon listsale">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
@@ -1353,25 +1434,25 @@
                     </div>
                     <div class="todayPicks__category--container">
                         <div class="todayPicks__category--type">
-                            <div class="todayPicks__category--card">
+                            <div class="todayPicks__category--card todayPicks__category--card1">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
                                 <p>
                                     Category
                                 </p>
                             </div>
-                            <div class="todayPicks__category--card">
+                            <div class="todayPicks__category--card todayPicks__category--card2">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
                                 <p>
                                     Price Range
                                 </p>
                             </div>
-                            <div class="todayPicks__category--card">
+                            <div class="todayPicks__category--card todayPicks__category--card3">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
                                 <p>
                                     Sale Type
                                 </p>
                             </div>
-                            <div class="todayPicks__category--card">
+                            <div class="todayPicks__category--card todayPicks__category--card4">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg>
                                 <p>
                                     Blockchain
@@ -2027,8 +2108,28 @@
     <script src="./swiper attachment/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper", {
-          slidesPerView: 4,
+          slidesPerView: 1,
           spaceBetween: 10,
+          breakpoints : {
+            4000 : {
+                slidesPerView: 7,
+            },
+            3000 : {
+                slidesPerView: 6,
+            },
+            2500: {
+                slidesPerView: 5,
+            } ,
+            1240: {
+                slidesPerView: 4,
+            } ,
+            1000: {
+                slidesPerView: 3,
+            },
+            649 : {
+                slidesPerView: 2,
+            }
+          } , 
           loop: true,
           grabCursor: true,
           pagination: {
@@ -2040,6 +2141,59 @@
             prevEl: ".swiper-button-prev",
           },
         });
+        let userTool = document.querySelectorAll(".header__register--user") ; 
+        let headerSearch = document.querySelector(".header__search--box") ;
+        let SocialBanner = document.querySelector(".ff") ; 
+        let headerContainer = document.querySelectorAll(".header__content") ; 
+        let closeMenu = document.querySelectorAll(".closeMenu") ; 
+        headerContainer.forEach((event) => {
+            event.parentElement.classList.remove("activeHeaderContainer") ; 
+            event.addEventListener("click" , (e)=> {
+                headerContainer.forEach((de) => {
+                    de.parentElement.classList.remove("activeHeaderContainer") ; 
+                })
+                event.parentElement.classList.add("activeHeaderContainer") ; 
+                event.parentElement.childNodes[3].classList.remove("deactiveMenu") ;
+            }) ; 
+        })
+        let menuLP = document.querySelectorAll(".menu--p") ; 
+        menuLP.forEach((event) => {
+            event.addEventListener("click" , (e)=> {
+                event.parentElement.classList.add("menu--li__active") ;
+                event.parentElement.childNodes[3].classList.remove("deactiveMenu") ;
+            })
+        })
+        SocialBanner.addEventListener("click" , (e)=> {
+            document.querySelector(".fixed__social").classList.toggle("fixed__social--active")  ; 
+        })
+        userTool.forEach((event) => {
+            event.addEventListener('click' , (e) => {
+                event.classList.remove("header__register--user--active")
+            })
+        })
+        document.addEventListener("click" , (e) => {
+            if(!SocialBanner.contains(e.target)) {
+                document.querySelector(".fixed__social").classList.remove("fixed__social--active")  ; 
+            }
+            if(!headerSearch.contains(e.target)){
+                headerSearch.classList.remove("active--dark") ;
+            }
+            userTool.forEach((event) => {
+                if(!event.contains(e.target)){
+                    event.classList.remove("header__register--user--active")
+                }
+            })
+            headerContainer.forEach((event) => {
+                if(!event.contains(e.target)) {
+                    event.classList.remove("activeHeaderContainer") ; 
+                }
+            })
+        })
+        closeMenu.forEach((event) => {
+            event.addEventListener("click" , (e)=> {
+                event.parentElement.classList.add("deactiveMenu")
+            })
+        })
       </script>
       <script src="./javaScript/countdown.js"></script>
       <script src="./javaScript/Searchbox.js"></script>

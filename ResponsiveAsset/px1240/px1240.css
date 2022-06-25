@@ -15,4 +15,19 @@
   .header__menu--left__container .header__search--box, .header__menu--left__container .header__blackTheme, .header__menu--left__container .header__lightTheme, .header__menu--left__container .header__register--user {
     margin: 0 0 0 0 !important;
   }
+
+  .feature__card--container {
+    grid-template-columns: repeat(auto-fit, minmax(28.7rem, 1fr)) !important;
+  }
+  .feature__card--container .last--feature__card {
+    grid-column: 2/3;
+  }
+
+  .top__seller--container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)) !important;
+  }
+
+  .todaypicks__card--container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)) !important;
+  }
 }/*# sourceMappingURL=px1240.css.map */

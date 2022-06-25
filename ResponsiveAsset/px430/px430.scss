@@ -1,0 +1,125 @@
+@import "../../Sass/Ultility/Variable" ; 
+@media only screen and (max-width : 430px){
+    .header {
+        padding: 1rem 0 !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap : 1rem ;
+    }
+    .menu1 {
+        top: 100%;
+        left: 0 !important;
+        transform-origin: right !important;
+    }
+    .header__container {
+        .menu , .menu1{
+            display: none;
+            transform: scaleX(1);
+            padding: 1rem 0 !important;
+            left: 0 !important;
+        }
+    }
+    .menu1 , .menu {
+        .closeMenu {
+            &::before {
+                content: "\f410";
+                display: table;
+                clear: both;
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                font-size: 3rem !important;
+                padding: 1.5rem 1rem !important;
+            }
+        }
+    }
+    .hero__container {
+        padding: 0 !important;
+    }
+    .hero {
+        h1 {
+            font-size: $font-size-large;
+            text-align: center;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        .hero__description {
+            text-align: center;
+            font-size: $font-size-sup-normal;
+        }
+        .hero__button--container {
+            flex-wrap: wrap !important;
+            gap : 1rem ; 
+            .hero__button {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+    .swiper__header {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        margin: 0 !important;
+        .swiper__header--title {
+            justify-content: center !important;
+        }
+    }
+    .swiper-button {
+        display: none !important;
+    }
+    #smallSwipwing {
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+        .swiper__box--creator__info , .swiper__box--bid , .swiper__box--creator , .swiper__box--bid__price {
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+        }
+    }
+    .feature__card--container {
+        margin: 0 !important;
+    }
+    .popular__container {
+        margin: 0 !important;
+        .popular__box {
+            padding:  1rem 0 !important;
+            .popular__image--top , .popular__image--bottom{
+                display: flex !important;
+                flex-direction: column !important;
+                img {
+                    height: 10rem !important;
+                }
+            }
+        }
+        .popular__creator--container , .popular__creator{
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            gap : 3rem !important ;
+        }
+    }
+    .todayPicks__category--container {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap : 3rem !important ;
+    }
+    .footer__container {
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+}
+.activeHeaderContainer {
+    .menu {
+        display: block;
+        transform: translateX(0%) !important;
+    }
+}
+.menu--li__active {
+    .menu1 {
+        display: block;
+        &::before {
+            display: none !important;
+        }
+    }
+}
+.deactiveMenu {
+    display: none !important;
+}

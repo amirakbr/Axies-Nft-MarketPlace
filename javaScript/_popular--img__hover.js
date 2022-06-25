@@ -5,7 +5,7 @@ const poplarimg4 = document.querySelectorAll('.popular__image4') ;
 const poplarimg5 = document.querySelectorAll('.popular__image5') ; 
 poplarimg1.forEach(e => {
     e.addEventListener('mouseover' , function(){
-        e.style.scale = '1.2' ; 
+        e.style.scale = '1.15' ; 
         e.style.zIndex = '10000'
     })
     e.addEventListener('mouseout' ,function(){
@@ -15,7 +15,7 @@ poplarimg1.forEach(e => {
 });
 poplarimg2.forEach(ee => {
     ee.addEventListener('mouseover' , function(){
-        ee.style.scale = '1.2' ; 
+        ee.style.scale = '1.15' ; 
         ee.style.zIndex = '10000'
     })
     ee.addEventListener('mouseout' ,function(){
@@ -25,7 +25,7 @@ poplarimg2.forEach(ee => {
 });
 poplarimg4.forEach(e => {
     e.addEventListener('mouseover' , function(){
-        e.style.scale = '1.3' ; 
+        e.style.scale = '1.2' ; 
         e.style.zIndex = '10000'
     })
     e.addEventListener('mouseout' ,function(){
@@ -35,7 +35,7 @@ poplarimg4.forEach(e => {
 });
 poplarimg3.forEach(ee => {
     ee.addEventListener('mouseover' , function(){
-        ee.style.scale = '1.3' ; 
+        ee.style.scale = '1.2' ; 
         ee.style.zIndex = '10000'
     })
     ee.addEventListener('mouseout' ,function(){
@@ -45,7 +45,7 @@ poplarimg3.forEach(ee => {
 });
 poplarimg5.forEach(ee => {
     ee.addEventListener('mouseover' , function(){
-        ee.style.scale = '1.3' ; 
+        ee.style.scale = '1.2' ; 
         ee.style.zIndex = '10000'
     })
     ee.addEventListener('mouseout' ,function(){

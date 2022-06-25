@@ -4,10 +4,11 @@
     .top__seller--box {
         border: .2em solid transparent ; 
         transition: all .3s ease-in-out;
+        border: .3rem solid $gray-scale;
+        transform: translateY(0rem);
         &:hover {
-            border: .2em solid $blue--violet--clr;
+            border: .3rem solid $blue--violet--clr;
             box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
-            transform: translateY(.5em);
         }
     }
 }
@@ -15,12 +16,11 @@
     color: $dark--clr;
     .top__seller--box {
         background-color: #e3e3ff;
-        border: .2em solid #e3e3ff;
+        border: .3rem solid $gray-scale ;
         transition: all .3s ease-in-out;
         &:hover {
-            border: .2em solid $blue--violet--clr;
+            border: .3rem solid $blue--violet--clr;
             box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
-            transform: translateY(.5em);
         }
     }
 }
@@ -41,8 +41,7 @@
         .top__seller--container {
         margin: 0 2.5rem 0 2.5rem;
         @include grid-repeat(5 , 1fr) ; 
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 1em 3em;
+        grid-gap: 1rem 3rem;
         .top__seller--box {
             @include dsply-flex(center , space-between) ; 
             padding: .5em 1em;

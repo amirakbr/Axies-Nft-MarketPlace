@@ -8,6 +8,7 @@
     }
     .popular__box {
         background-color: $gray-scale;
+        overflow: hidden;
         &::before {
             content: "";
             position: absolute;
