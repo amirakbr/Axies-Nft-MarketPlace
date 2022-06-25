@@ -2141,59 +2141,6 @@
             prevEl: ".swiper-button-prev",
           },
         });
-        let userTool = document.querySelectorAll(".header__register--user") ; 
-        let headerSearch = document.querySelector(".header__search--box") ;
-        let SocialBanner = document.querySelector(".ff") ; 
-        let headerContainer = document.querySelectorAll(".header__content") ; 
-        let closeMenu = document.querySelectorAll(".closeMenu") ; 
-        headerContainer.forEach((event) => {
-            event.parentElement.classList.remove("activeHeaderContainer") ; 
-            event.addEventListener("click" , (e)=> {
-                headerContainer.forEach((de) => {
-                    de.parentElement.classList.remove("activeHeaderContainer") ; 
-                })
-                event.parentElement.classList.add("activeHeaderContainer") ; 
-                event.parentElement.childNodes[3].classList.remove("deactiveMenu") ;
-            }) ; 
-        })
-        let menuLP = document.querySelectorAll(".menu--p") ; 
-        menuLP.forEach((event) => {
-            event.addEventListener("click" , (e)=> {
-                event.parentElement.classList.add("menu--li__active") ;
-                event.parentElement.childNodes[3].classList.remove("deactiveMenu") ;
-            })
-        })
-        SocialBanner.addEventListener("click" , (e)=> {
-            document.querySelector(".fixed__social").classList.toggle("fixed__social--active")  ; 
-        })
-        userTool.forEach((event) => {
-            event.addEventListener('click' , (e) => {
-                event.classList.remove("header__register--user--active")
-            })
-        })
-        document.addEventListener("click" , (e) => {
-            if(!SocialBanner.contains(e.target)) {
-                document.querySelector(".fixed__social").classList.remove("fixed__social--active")  ; 
-            }
-            if(!headerSearch.contains(e.target)){
-                headerSearch.classList.remove("active--dark") ;
-            }
-            userTool.forEach((event) => {
-                if(!event.contains(e.target)){
-                    event.classList.remove("header__register--user--active")
-                }
-            })
-            headerContainer.forEach((event) => {
-                if(!event.contains(e.target)) {
-                    event.classList.remove("activeHeaderContainer") ; 
-                }
-            })
-        })
-        closeMenu.forEach((event) => {
-            event.addEventListener("click" , (e)=> {
-                event.parentElement.classList.add("deactiveMenu")
-            })
-        })
       </script>
       <script src="./javaScript/countdown.js"></script>
       <script src="./javaScript/Searchbox.js"></script>
