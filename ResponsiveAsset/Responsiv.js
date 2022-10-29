@@ -49,11 +49,13 @@ let userTool = document.querySelectorAll(".header__register--user") ;
         headerContainer.forEach((event) => {
             event.parentElement.classList.remove("activeHeaderContainer") ; 
             event.addEventListener("click" , (e)=> {
-                headerContainer.forEach((de) => {
-                    de.parentElement.classList.remove("activeHeaderContainer") ; 
-                })
-                event.parentElement.classList.add("activeHeaderContainer") ; 
-                event.parentElement.childNodes[3].classList.remove("deactiveMenu") ;
+                if(document.querySelector('.hamburger__icon').classList.contains('hamburger__icon--active')){
+                    headerContainer.forEach((de) => {
+                        de.parentElement.classList.remove("activeHeaderContainer") ; 
+                    })
+                    event.parentElement.classList.add("activeHeaderContainer") ; 
+                    event.parentElement.childNodes[3].classList.remove("deactiveMenu") ;
+                }
             }) ; 
         })
         let menuLP = document.querySelectorAll(".menu--p") ; 
