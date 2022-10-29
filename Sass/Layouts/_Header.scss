@@ -39,8 +39,9 @@
         }
     }
     .header__search--box {
+        border: .2em solid $gray-scale;
         background-color: none;
-        border-radius: 0 0 2rem 2rem;
+        border-radius: .5rem;
     }
     .header__lightTheme  , .header__register--user{
         border: .3rem solid $purple--clr;
@@ -94,7 +95,7 @@
         color: $dark--clr !important;
         .header__search--box {
             border: .3rem solid $purple--clr;
-            border-radius: .8rem;
+            border-radius: .5rem;
         }
         .header__wallet--button {
             i {
@@ -196,7 +197,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     .header__title {
         margin-left: 1rem;
         height: 5rem;

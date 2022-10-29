@@ -34,7 +34,8 @@
         }
         &:hover {
             border: .2em solid $gradiant-finish-purple;
-            box-shadow: inset 0rem 0rem 1rem 0rem $gradiant-finish-purple ,0rem 0rem 2rem .5rem $gradiant-finish-purple ;
+            box-shadow: inset 0rem 0rem .5rem 0rem $gradiant-finish-purple ,0rem 0rem 2.5rem -.5rem $gradiant-finish-purple ;
+            background-color: $blue--violet--clr;
         }
     }
 }
@@ -80,7 +81,7 @@
 }
 .hero {
     z-index: 5;
-    margin-top: 5rem !important;
+    margin-top: 7rem !important;
     .hero__container {
         padding: 0 2.5rem;
         height: 100%;
@@ -109,6 +110,7 @@
             .hero__button--container {
                 @include dsply-flex-cntr-cntr ;
                 margin-top: 4em;
+                padding-bottom: 3rem ; 
                 .hero__button {
                     font-size: $font-size-normal;
                     padding: .5em 1em;
