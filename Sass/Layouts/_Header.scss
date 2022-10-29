@@ -118,7 +118,11 @@
             }
         }
     }
-
+    .header__search--box {
+        border: .3rem solid $purple--clr;
+        background-color: none;
+        border-radius: .5rem;
+    }
 }
 
 
@@ -576,6 +580,17 @@
         }
     }
 }
+.lightHamburger{
+    color: white !important;
+    .hamburger__icon{
+        span{
+            border-bottom: .3rem solid black !important;
+        }
+    }
+    .header__menu--right__container{
+        color: white !important;
+    }
+}
 .hamburger {
     display: none;
     .hamburger__container {
@@ -611,6 +626,7 @@
             width: max-content;
             z-index: +10;
             padding: 1rem 2rem;
+            margin-top: 1rem;
             border-radius: 0 0 1rem 1rem;
             background-color: #08002deb;
             backdrop-filter: blur(1px);
@@ -618,7 +634,8 @@
             border-top: transparent;
             transform: translateX(-140%);
             opacity: 0 ;
-            transition: all 0.4s cubic-bezier(.95,.05,0,.91);
+            transition: all 0.4s cubic-bezier(.95,.05,0,.91)
+            ;
             .header__title {
                 width: fit-content !important;
             }

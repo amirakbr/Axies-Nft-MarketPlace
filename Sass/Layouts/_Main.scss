@@ -64,7 +64,7 @@
     position: fixed;
     display: block;
     border-radius: .5em;
-    top: 30%;
+    top: calc(100vh - 7rem) !important;
     left: 50%;
     animation: kff 2.5s  ease-in-out forwards;
     z-index: +1000000000;

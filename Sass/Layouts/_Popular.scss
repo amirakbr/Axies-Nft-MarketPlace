@@ -80,12 +80,14 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: .5em;
+                width: 100%;
                 .popular__image--top {
                     @include grid-gtc-2(1fr , 1fr) ; 
                     grid-template-rows: 14rem ; 
                     grid-gap: .5em;
                     img {
                         border-radius: 1em ; 
+                        scale: 1 ; 
                     }
                 }
                 .popular__image--bottom {
@@ -94,6 +96,7 @@
                     grid-gap: .5em;
                     img {
                         border-radius: .6em ; 
+                        scale: 1 ; 
                     }
                 }
             }

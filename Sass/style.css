@@ -401,6 +401,11 @@ a {
 .lightHeader .header__blackTheme button i, .lightHeader .header__register--user button i {
   color: black;
 }
+.lightHeader .header__search--box {
+  border: 0.3rem solid #9835fb;
+  background-color: none;
+  border-radius: 0.5rem;
+}
 
 .lightmenu {
   background-color: rgb(251, 249, 255);
@@ -942,6 +947,16 @@ a {
   margin-left: 1rem;
 }
 
+.lightHamburger {
+  color: white !important;
+}
+.lightHamburger .hamburger__icon span {
+  border-bottom: 0.3rem solid black !important;
+}
+.lightHamburger .header__menu--right__container {
+  color: white !important;
+}
+
 .hamburger {
   display: none;
 }
@@ -979,6 +994,7 @@ a {
   width: max-content;
   z-index: 10;
   padding: 1rem 2rem;
+  margin-top: 1rem;
   border-radius: 0 0 1rem 1rem;
   background-color: rgba(8, 0, 45, 0.9215686275);
   -webkit-backdrop-filter: blur(1px);
@@ -1286,7 +1302,6 @@ a {
 
 .hero {
   z-index: 5;
-  margin-top: 7rem !important;
 }
 .hero .hero__container {
   padding: 0 2.5rem;
@@ -1494,7 +1509,7 @@ a {
   position: fixed;
   display: block;
   border-radius: 0.5em;
-  top: 30%;
+  top: calc(100vh - 7rem) !important;
   left: 50%;
   -webkit-animation: kff 2.5s ease-in-out forwards;
           animation: kff 2.5s ease-in-out forwards;
@@ -2077,6 +2092,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5em;
+  width: 100%;
 }
 .popular .popular__box--container .popular__box .popular__image--container .popular__image--top {
   grid-template-columns: 1fr 1fr;
@@ -2086,6 +2102,7 @@ a {
 }
 .popular .popular__box--container .popular__box .popular__image--container .popular__image--top img {
   border-radius: 1em;
+  scale: 1;
 }
 .popular .popular__box--container .popular__box .popular__image--container .popular__image--bottom {
   grid-template-columns: 1fr 1fr 1fr;
@@ -2095,6 +2112,7 @@ a {
 }
 .popular .popular__box--container .popular__box .popular__image--container .popular__image--bottom img {
   border-radius: 0.6em;
+  scale: 1;
 }
 .popular .popular__box--container .popular__box .popular__creator--container {
   display: flex;
@@ -3879,6 +3897,11 @@ a {
 .lightHeader .header__blackTheme button i, .lightHeader .header__register--user button i {
   color: black;
 }
+.lightHeader .header__search--box {
+  border: 0.3rem solid #9835fb;
+  background-color: none;
+  border-radius: 0.5rem;
+}
 
 .lightmenu {
   background-color: rgb(251, 249, 255);
@@ -4375,6 +4398,16 @@ a {
   margin-left: 1rem;
 }
 
+.lightHamburger {
+  color: white !important;
+}
+.lightHamburger .hamburger__icon span {
+  border-bottom: 0.3rem solid black !important;
+}
+.lightHamburger .header__menu--right__container {
+  color: white !important;
+}
+
 .hamburger {
   display: none;
 }
@@ -4412,6 +4445,7 @@ a {
   width: max-content;
   z-index: 10;
   padding: 1rem 2rem;
+  margin-top: 1rem;
   border-radius: 0 0 1rem 1rem;
   background-color: rgba(8, 0, 45, 0.9215686275);
   -webkit-backdrop-filter: blur(1px);
